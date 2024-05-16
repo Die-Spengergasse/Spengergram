@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C4EBDBAD-18E8-4EF0-A045-D1FC2691A145}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg.Spengergram.Api", "src\Spg.Spengergram.Api\Spg.Spengergram.Api.csproj", "{181E75AE-88EC-4F6E-B541-290ACA695B17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg.Spengergram.Application", "src\Spg.Spengergram.Application\Spg.Spengergram.Application.csproj", "{D4D32587-9743-4E18-8C60-739567DF7ABD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg.Spengergram.Infrastructure", "src\Spg.Spengergram.Infrastructure\Spg.Spengergram.Infrastructure.csproj", "{7AC2C435-D841-4128-931E-1CB86787CAF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg.Spengergram.DomainModel", "src\Spg.Spengergram.DomainModel\Spg.Spengergram.DomainModel.csproj", "{3AAEF7C9-1B9C-481F-BAD8-AD551F92CD88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg.Spengergram.Repository", "src\Spg.Spengergram.Repository\Spg.Spengergram.Repository.csproj", "{7C9C0E36-75E5-4342-A1E6-68A344636530}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B6A7341B-2484-4093-82C0-A082F7A3E3A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg.Spengergram.Api.Test", "test\Spg.Spengergram.Api.Test\Spg.Spengergram.Api.Test.csproj", "{CBBA6995-853D-46C5-828F-1BAD24B13B5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg.Spengergram.Application.Test", "test\Spg.Spengergram.Application.Test\Spg.Spengergram.Application.Test.csproj", "{9E234CE8-1BAD-4726-B0D8-9790D8ED196E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg.Spengergram.DomainModel.Test", "test\Spg.Spengergram.DomainModel.Test\Spg.Spengergram.DomainModel.Test.csproj", "{95F6979B-45A6-41CC-BDA4-3D9948D4934A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spg.Spengergram.Repository.Test", "test\Spg.Spengergram.Repository.Test\Spg.Spengergram.Repository.Test.csproj", "{12189E5A-FA47-4249-ADF2-738758AA5FFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{181E75AE-88EC-4F6E-B541-290ACA695B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{181E75AE-88EC-4F6E-B541-290ACA695B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{181E75AE-88EC-4F6E-B541-290ACA695B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{181E75AE-88EC-4F6E-B541-290ACA695B17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4D32587-9743-4E18-8C60-739567DF7ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D32587-9743-4E18-8C60-739567DF7ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D32587-9743-4E18-8C60-739567DF7ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D32587-9743-4E18-8C60-739567DF7ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AC2C435-D841-4128-931E-1CB86787CAF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AC2C435-D841-4128-931E-1CB86787CAF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AC2C435-D841-4128-931E-1CB86787CAF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AC2C435-D841-4128-931E-1CB86787CAF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AAEF7C9-1B9C-481F-BAD8-AD551F92CD88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AAEF7C9-1B9C-481F-BAD8-AD551F92CD88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AAEF7C9-1B9C-481F-BAD8-AD551F92CD88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AAEF7C9-1B9C-481F-BAD8-AD551F92CD88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C9C0E36-75E5-4342-A1E6-68A344636530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9C0E36-75E5-4342-A1E6-68A344636530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9C0E36-75E5-4342-A1E6-68A344636530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9C0E36-75E5-4342-A1E6-68A344636530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBBA6995-853D-46C5-828F-1BAD24B13B5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBBA6995-853D-46C5-828F-1BAD24B13B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBBA6995-853D-46C5-828F-1BAD24B13B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBBA6995-853D-46C5-828F-1BAD24B13B5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E234CE8-1BAD-4726-B0D8-9790D8ED196E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E234CE8-1BAD-4726-B0D8-9790D8ED196E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E234CE8-1BAD-4726-B0D8-9790D8ED196E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E234CE8-1BAD-4726-B0D8-9790D8ED196E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95F6979B-45A6-41CC-BDA4-3D9948D4934A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95F6979B-45A6-41CC-BDA4-3D9948D4934A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95F6979B-45A6-41CC-BDA4-3D9948D4934A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95F6979B-45A6-41CC-BDA4-3D9948D4934A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12189E5A-FA47-4249-ADF2-738758AA5FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12189E5A-FA47-4249-ADF2-738758AA5FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12189E5A-FA47-4249-ADF2-738758AA5FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12189E5A-FA47-4249-ADF2-738758AA5FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{181E75AE-88EC-4F6E-B541-290ACA695B17} = {C4EBDBAD-18E8-4EF0-A045-D1FC2691A145}
+		{D4D32587-9743-4E18-8C60-739567DF7ABD} = {C4EBDBAD-18E8-4EF0-A045-D1FC2691A145}
+		{7AC2C435-D841-4128-931E-1CB86787CAF3} = {C4EBDBAD-18E8-4EF0-A045-D1FC2691A145}
+		{3AAEF7C9-1B9C-481F-BAD8-AD551F92CD88} = {C4EBDBAD-18E8-4EF0-A045-D1FC2691A145}
+		{7C9C0E36-75E5-4342-A1E6-68A344636530} = {C4EBDBAD-18E8-4EF0-A045-D1FC2691A145}
+		{CBBA6995-853D-46C5-828F-1BAD24B13B5F} = {B6A7341B-2484-4093-82C0-A082F7A3E3A1}
+		{9E234CE8-1BAD-4726-B0D8-9790D8ED196E} = {B6A7341B-2484-4093-82C0-A082F7A3E3A1}
+		{95F6979B-45A6-41CC-BDA4-3D9948D4934A} = {B6A7341B-2484-4093-82C0-A082F7A3E3A1}
+		{12189E5A-FA47-4249-ADF2-738758AA5FFE} = {B6A7341B-2484-4093-82C0-A082F7A3E3A1}
+	EndGlobalSection
+EndGlobal
