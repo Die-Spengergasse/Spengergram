@@ -25,7 +25,7 @@ namespace Spg.Spengergram.Infrastructure
             //
             // Owns One
             builder.Entity<User>().OwnsOne(e => e.EMailAddress);
-            builder.Entity<User>().OwnsOne(e => e.Username);
+            builder.Entity<User>().Property(p=>p.Id); //  .OwnsOne(e => e.Username);
             //
             // Owns Many
             builder.Entity<User>().OwnsMany(

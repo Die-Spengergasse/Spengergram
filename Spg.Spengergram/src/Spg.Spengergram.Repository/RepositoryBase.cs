@@ -10,11 +10,11 @@ namespace Spg.Spengergram.Repository
     public class RepositoryBase<TEntity> : IRepositoryBase<TEntity>
         where TEntity : class
     {
-        private readonly SqLiteDatabase _photoContext;
+        private readonly SqLiteDatabase _database;
 
-        public RepositoryBase(SqLiteDatabase photoContext)
+        public RepositoryBase(SqLiteDatabase database)
         {
-            _photoContext = photoContext;
+            _database = database;
         }
 
         public TEntity? GetByPK<TKey, TProperty>(
@@ -23,16 +23,16 @@ namespace Spg.Spengergram.Repository
             Expression<Func<TEntity, TProperty>>? includeReference = null)
             where TProperty : class
         {
-            TEntity? entity = _photoContext.Set<TEntity>().Find(pk);
+            TEntity? entity = _database.Set<TEntity>().Find(pk);
             if (entity is not null)
             {
                 if (includeCollection is not null)
                 {
-                    _photoContext.Entry(entity).Collection(includeCollection).Load();
+                    _database.Entry(entity).Collection(includeCollection).Load();
                 }
                 if (includeReference is not null)
                 {
-                    _photoContext.Entry(entity).Reference(includeReference!).Load();
+                    _database.Entry(entity).Reference(includeReference!).Load();
                 }
             }
             return entity;
@@ -44,7 +44,7 @@ namespace Spg.Spengergram.Repository
             Expression<Func<TEntity, TProperty>>? includeReference = null)
             where TProperty : class
         {
-            TEntity? entity = _photoContext.Set<TEntity>().Find(pk);
+            TEntity? entity = _database.Set<TEntity>().Find(pk);
             if (entity is not null)
             {
                 if (includeCollection is not null)
@@ -53,13 +53,13 @@ namespace Spg.Spengergram.Repository
                     {
                         if (item is not null)
                         {
-                            _photoContext.Entry(entity).Collection(item).Load();
+                            _database.Entry(entity).Collection(item).Load();
                         }
                     }
                 }
                 if (includeReference is not null)
                 {
-                    _photoContext.Entry(entity).Reference(includeReference!).Load();
+                    _database.Entry(entity).Reference(includeReference!).Load();
                 }
             }
             return entity;
@@ -68,7 +68,7 @@ namespace Spg.Spengergram.Repository
         public T? GetByGuid<T>(Guid guid)
             where T : class, IFindableByGuid
         {
-            return _photoContext
+            return _database
                 .Set<T>()
                 .SingleOrDefault(e => e.Guid == guid);
         }
@@ -80,7 +80,7 @@ namespace Spg.Spengergram.Repository
             where T : class, IFindableByGuid
             where TProperty : class
         {
-            T? entity = _photoContext
+            T? entity = _database
                 .Set<T>()
                 .SingleOrDefault(e => e.Guid == guid);
 
@@ -90,13 +90,13 @@ namespace Spg.Spengergram.Repository
                 {
                     if (item is not null)
                     {
-                        _photoContext.Entry(entity).Collection(item).Load();
+                        _database.Entry(entity).Collection(item).Load();
                     }
                 }
             }
             if (includeReference is not null)
             {
-                _photoContext.Entry(entity).Reference(includeReference!).Load();
+                _database.Entry(entity).Reference(includeReference!).Load();
             }
 
             return entity;
@@ -105,17 +105,17 @@ namespace Spg.Spengergram.Repository
         public T? GetByEMail<T>(string eMail)
             where T : class, IFindableByEMail
         {
-            return _photoContext
+            return _database
                 .Set<T>()
                 .SingleOrDefault(e => e.EMailAddress.Value == eMail);
         }
 
         public void Create(TEntity newEntity)
         {
-            _photoContext.Set<TEntity>().Add(newEntity);
+            _database.Set<TEntity>().Add(newEntity);
             try
             {
-                _photoContext.SaveChanges();
+                _database.SaveChanges();
             }
             catch (DbUpdateException ex)
             {
@@ -125,13 +125,13 @@ namespace Spg.Spengergram.Repository
 
         public void Delete<TId, RichType>(IRichType<TId> richType)
         {
-            TEntity foundEntity = _photoContext.Set<TEntity>().Find(richType) ??
+            TEntity foundEntity = _database.Set<TEntity>().Find(richType) ??
                 throw WriteRepositoryException.FromDelete();
 
-            _photoContext.Set<TEntity>().Remove(foundEntity);
+            _database.Set<TEntity>().Remove(foundEntity);
             try
             {
-                _photoContext.SaveChanges();
+                _database.SaveChanges();
             }
             catch (DbUpdateException ex)
             {

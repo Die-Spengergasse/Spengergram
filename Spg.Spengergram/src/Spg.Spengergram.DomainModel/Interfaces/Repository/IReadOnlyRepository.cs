@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Spg.Spengergram.DomainModel.Interfaces.Repository
 {
-    public interface IReadOnlyRepository<TReadBilder>
+    public interface IReadOnlyRepository<TEntity, TFilterBilder>
+        where TEntity : class
+        where TFilterBilder : IEntityFilterBuilder<TEntity>
     {
-        TReadBilder FilterBuilder { get; set; }
+        TFilterBilder FilterBuilder { get; set; }
     }
 }

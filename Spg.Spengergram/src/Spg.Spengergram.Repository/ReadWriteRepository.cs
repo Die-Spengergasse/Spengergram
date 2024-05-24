@@ -1,10 +1,5 @@
 ﻿using Spg.Spengergram.DomainModel.Interfaces.Repository;
 using Spg.Spengergram.Infrastructure;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Spg.Spengergram.Repository
 {
@@ -17,10 +12,10 @@ namespace Spg.Spengergram.Repository
         public IUpdateBuilderBase<TEntity, TUpdateBuilder> UpdateBuilder { get; }
 
         public ReadWriteRepository(
-            SqLiteDatabase photoContext,
+            SqLiteDatabase database,
             TFilterBilder filterBuilder,
             TUpdateBuilder updateBuilder)
-                : base(photoContext, filterBuilder)
+                : base(database, filterBuilder)
         {
             UpdateBuilder = new UpdateBuilderBase<TEntity, TUpdateBuilder>(updateBuilder);
         }

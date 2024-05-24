@@ -27,6 +27,7 @@
     <ProjectReference Include="..\..\src\Spg.Spengergram.Application\Spg.Spengergram.Application.csproj" />
     <ProjectReference Include="..\..\src\Spg.Spengergram.DomainModel\Spg.Spengergram.DomainModel.csproj" />
     <ProjectReference Include="..\..\src\Spg.Spengergram.Infrastructure\Spg.Spengergram.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\Spg.Spengergram.Repository\Spg.Spengergram.Repository.csproj" />
   </ItemGroup>
 
 </Project>

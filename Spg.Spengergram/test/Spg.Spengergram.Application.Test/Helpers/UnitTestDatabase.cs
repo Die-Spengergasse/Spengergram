@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Spg.Spengergram.Infrastructure;
 
-namespace Spg.Spengergram.DomainModel.Test.Helpers
+namespace Spg.Spengergram.Application.Test.Helpers
 {
     public class UnitTestDatabase : SqLiteDatabase
     {

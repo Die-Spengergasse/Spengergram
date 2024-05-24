@@ -8,6 +8,10 @@
     <ProjectReference Include="..\Spg.Spengergram.DomainModel\Spg.Spengergram.DomainModel.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UseCases\UserStories\Commands\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
