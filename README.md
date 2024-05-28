@@ -134,7 +134,7 @@ Ein Meilensteinplan der die Lehrinhalte bis zum jeweiligen Monatsende vorgibt. F
 * Zeitreserve
 * Projektabschluss
 
-## Voraussetzungen seitens PRE
+## Lernziele PRE bis Ende
 
 ### September
 
