@@ -25,6 +25,9 @@ namespace Spg.Spengergram.Application.UseCases.UserStories.Commands
             User existigUser = _readOnlyUserRepository.GetByGuid<User>(request.Command.Id)
                 ?? throw ReadServiceException.FromNotFound();
 
+            // Validation
+            // ...
+
             // Act
             try
             {
