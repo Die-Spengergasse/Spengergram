@@ -1,14 +1,10 @@
 ﻿using Spg.Spengergram.Application.Test.Helpers;
+using Spg.Spengergram.Application.UseCases.UserStories.Commands;
 using Spg.Spengergram.Application.UseCases.UserStories.Queries;
+using Spg.Spengergram.DomainModel.Commands;
 using Spg.Spengergram.DomainModel.Dtos;
-using Spg.Spengergram.DomainModel.Interfaces.Repository;
 using Spg.Spengergram.Repository.Builders;
 using Spg.Spengergram.Repository.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Spg.Spengergram.Application.Test
 {
@@ -22,7 +18,7 @@ namespace Spg.Spengergram.Application.Test
                 // Arrange
                 DatabaseUtilities.SeedDatabase(db);
                 GetUserFilteredModel model = new GetUserFilteredModel(
-                        new DomainModel.Queries.GetUserFilteredQuery("firstname ct an"));
+                    new DomainModel.Queries.GetUserFilteredQuery("firstname ct an"));
 
                 // Act
                 GetUserFilteredHandler handler = new GetUserFilteredHandler(
@@ -42,7 +38,7 @@ namespace Spg.Spengergram.Application.Test
                 // Arrange
                 DatabaseUtilities.SeedDatabase(db);
                 GetUserFilteredModel model = new GetUserFilteredModel(
-                        new DomainModel.Queries.GetUserFilteredQuery("lastname ct th"));
+                    new DomainModel.Queries.GetUserFilteredQuery("lastname ct th"));
 
                 // Act
                 GetUserFilteredHandler handler = new GetUserFilteredHandler(
@@ -62,7 +58,7 @@ namespace Spg.Spengergram.Application.Test
                 // Arrange
                 DatabaseUtilities.SeedDatabase(db);
                 GetUserFilteredModel model = new GetUserFilteredModel(
-                        new DomainModel.Queries.GetUserFilteredQuery("evaluation gt 5"));
+                    new DomainModel.Queries.GetUserFilteredQuery("evaluation gt 5"));
 
                 // Act
                 GetUserFilteredHandler handler = new GetUserFilteredHandler(
@@ -82,7 +78,7 @@ namespace Spg.Spengergram.Application.Test
                 // Arrange
                 DatabaseUtilities.SeedDatabase(db);
                 GetUserFilteredModel model = new GetUserFilteredModel(
-                        new DomainModel.Queries.GetUserFilteredQuery("birthdate bw 2000.01.01 2010.12.31"));
+                    new DomainModel.Queries.GetUserFilteredQuery("birthdate bw 2000.01.01 2010.12.31"));
 
                 // Act
                 GetUserFilteredHandler handler = new GetUserFilteredHandler(
@@ -91,6 +87,28 @@ namespace Spg.Spengergram.Application.Test
 
                 // Assert
                 Assert.Equal(2, result.Count());
+            }
+        }
+
+        [Fact]
+        public void Should_UpdateUser()
+        {
+            using (UnitTestDatabase db = DatabaseUtilities.CreateDb())
+            {
+                // Arrange
+                DatabaseUtilities.SeedDatabase(db);
+                UpdateProfileModel model = new UpdateProfileModel(
+                    new UpdateProfileCommand(new Guid("44445555-9541-5555-2222-999944443333"), "Toni", "Fat"));
+
+                // Act
+                UpdateProfileHandler handler = new UpdateProfileHandler(
+                    new WritableUserRepository(db, new UserFilterBuilder(db.Users), new UserUpdateBuilder(db)), 
+                    new ReadOnlyUserRepository(db, new UserFilterBuilder(db.Users)));
+                handler.Handle(model, CancellationToken.None);
+
+                // Assert
+                Assert.Equal("Toni", db.Users.ElementAt(3).FirstName);
+                Assert.Equal("Fat", db.Users.ElementAt(3).LastName);
             }
         }
     }

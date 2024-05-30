@@ -1,5 +1,4 @@
 ﻿using Spg.Spengergram.DomainModel.Interfaces.Repository;
-using System.ComponentModel;
 using System.Reflection;
 
 namespace Spg.Spengergram.Application

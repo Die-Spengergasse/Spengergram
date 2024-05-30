@@ -1,5 +1,4 @@
 using Spg.Spengergram.DomainModel.Test.Helpers;
-using Spg.Spengergram.Infrastructure;
 
 namespace Spg.Spengergram.DomainModel.Test;
 

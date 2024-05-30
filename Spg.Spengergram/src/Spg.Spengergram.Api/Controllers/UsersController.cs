@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Spg.Spengergram.Application.UseCases.UserStories.Queries;
 using Spg.Spengergram.DomainModel.Dtos;

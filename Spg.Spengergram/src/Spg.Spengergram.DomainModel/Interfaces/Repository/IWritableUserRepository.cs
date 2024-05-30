@@ -2,6 +2,8 @@
 
 namespace Spg.Spengergram.DomainModel.Interfaces.Repository
 {
-    public interface IReadOnlyUserRepository : IReadOnlyRepository<User, IUserFilterBuilder>
-    { }
+    public interface IWritableUserRepository : IReadWriteRepository<User, IUserUpdateBuilder>
+    {
+
+    }
 }

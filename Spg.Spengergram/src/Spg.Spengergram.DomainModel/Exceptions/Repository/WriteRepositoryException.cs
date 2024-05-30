@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Spg.Spengergram.DomainModel.Exceptions.Repository
+﻿namespace Spg.Spengergram.DomainModel.Exceptions.Repository
 {
     public class WriteRepositoryException : Exception
     {
@@ -32,6 +26,14 @@ namespace Spg.Spengergram.DomainModel.Exceptions.Repository
         public static WriteRepositoryException FromDelete(Exception innerException)
         {
             return new WriteRepositoryException("Delete failed!", innerException);
+        }
+        public static WriteRepositoryException FromUpdate()
+        {
+            return new WriteRepositoryException("Update failed!");
+        }
+        public static WriteRepositoryException FromUpdate(Exception innerException)
+        {
+            return new WriteRepositoryException("Update failed!", innerException);
         }
     }
 }
