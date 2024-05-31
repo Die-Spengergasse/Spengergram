@@ -26,9 +26,9 @@ namespace Spg.Spengergram.Application.UseCases.UserStories.Commands
                 ?? throw ReadServiceException.FromNotFound();
 
             // Validation
-            // ...
+            // ... throw ValidationException.FromWrongAndVeryBadThisAndThat();
 
-            // Act
+            // Act and Save
             try
             {
                 _writableUserRepository

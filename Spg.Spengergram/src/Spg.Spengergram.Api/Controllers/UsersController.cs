@@ -23,7 +23,6 @@ namespace Spg.Spengergram.Api.Controllers
         //                  -property- -operation- -value-
         // api/users?filter=lastname    ct         asd
         [HttpGet()]
-        [Authorize(Roles = "admin")]
         public IActionResult Get([FromQuery()] GetUserFilteredQuery query)
         {
             List<UserDto> data = _mediator
