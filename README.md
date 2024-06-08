@@ -12,11 +12,12 @@ Dies ermöglicht es ihnen, sowohl theoretisches Wissen als auch praktische Fähi
 Das Projekt dient zudem als Musterbeispiel, das die Studierenden für zukünftige Diplomprojekte und berufliche Vorhaben nutzen können.
 
 ## Lehrmethodik
-* Flipped Class Room
-* +- 10 große Lehrziele / Semester
-* Für jedes Lehrziel einen Foliensatz, der im Vorhinein ausgeteilt wird.
-* Individuelle Vorbereitung der Studierenden ergibt eine grundlegende Mitarbeitsbewertung.
-* Für jedes Lehrziel vorstellen, zu absteigenden Prozentsätzen vorkodieren, Abschluss muss durch die Studierenden erfolgen, Beurteilung durch Pull-Request. Auflösung im Nachhinein.
+* Flipped Classroom
+* Etwa 10 große Lehrziele pro Semester
+* Die individuelle Vorbereitung der Studierenden wird als Teil der fortlaufenden Bewertung ihrer Mitarbeit angesehen.
+* Jede Woche beginnt mit der Vorstellung des Lehrziels, welches zunehmend gemeinsam programmiert wird, wobei der Anteil der Lehrenden schrittweise abnimmt.
+* Der Abschluss des Lehrziels muss durch die Studierenden erfolgen; die Beurteilung erfolgt durch Pull-Requests.
+* Die Auflösung des Lehrziels erfolgt nachträglich.
 
 ## Bewertung
 * **Wöchentliche Pull-Requests:** Die Studierenden müssen jede Woche einen Pull-Request einreichen. Die Qualität dieser Pull-Requests ist ein zentrales Bewertungskriterium und reflektiert die kontinuierliche Mitarbeit und technische Umsetzung des Projekts.
