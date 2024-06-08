@@ -1,179 +1,144 @@
-# Spengergram 
-
-Codename: Prometheus
+# Spengergram 🥳
 
 ## Beschreibung
+Spengergram ist eine kompakte Social-Media-App, die es Nutzer ermöglicht, sich zu registrieren, anzumelden und Fotos zu teilen.
+Nutzer können Beiträge auf einer Timeline durchsuchen und liken.
+Weitere Kernfunktionen umfassen das Hinzufügen und Verwalten von Freundschaften sowie ein separates Admin-Dashboard.
+Diese vereinfachte Version von Instagram dient als praxisorientiertes Lernprojekt, in dem Studierende grundlegende und fortgeschrittene Techniken der App-Entwicklung in einem realen Kontext anwenden können.
 
-Es wird mit der Klasse gemeinsam eine Art "Instagram-App" entwickelt. 
+## Motivation
+Das Ziel des Projekts ist es, den Studierenden eine praxisnahe Erfahrung zu bieten, indem sie den gesamten Entwicklungsprozess einer App von der Konzeption bis zur Produktionsreife durchlaufen.
+Dies ermöglicht es ihnen, sowohl theoretisches Wissen als auch praktische Fähigkeiten in der Entwicklung von Web- und Mobile-Anwendungen anzuwenden.
+Das Projekt dient zudem als Musterbeispiel, das die Studierenden für zukünftige Diplomprojekte und berufliche Vorhaben nutzen können.
 
-### Features Front End und Back End
-
-* Registrierung
-* Anmeldung / Abmeldung (Token-Lifetime?!)
-* Messaging
-* Upload/Download von Bildern und Videos
-* Filtern, Sortieren und Pagen in Listen
-* Verwaltung von Likes, Followers und Kommentaren
-* Kleines separates Admin-Dashboard zur Verwaltung von Usern, Messages/Medias und allgemeine Moderation
-
-## Methoden
-
-Die Methoden werden eine Mischung aus Frontalvortrag, Live Coding und Gruppenarbeit sein. In den Gruppenarbeiten sollen einzelne Features von den Studierenden umgesetzt werden. 
+## Lehrmethodik
+* Flipped Class Room
+* +- 10 große Lehrziele / Semester
+* Für jedes Lehrziel einen Foliensatz, der im Vorhinein ausgeteilt wird.
+* Individuelle Vorbereitung der Studierenden ergibt eine grundlegende Mitarbeitsbewertung.
+* Für jedes Lehrziel vorstellen, zu absteigenden Prozentsätzen vorkodieren, Abschluss muss durch die Studierenden erfolgen, Beurteilung durch Pull-Request. Auflösung im Nachhinein.
 
 ## Bewertung
+* **Wöchentliche Pull-Requests:** Die Studierenden müssen jede Woche einen Pull-Request einreichen. Die Qualität dieser Pull-Requests ist ein zentrales Bewertungskriterium und reflektiert die kontinuierliche Mitarbeit und technische Umsetzung des Projekts.
+* **Praktische Leistungsüberprüfung (PLÜ):** Zusätzlich zur laufenden Bewertung der Pull-Requests findet pro Semester eine PLÜ statt, die darauf abzielt, das erlernte Wissen und die praktischen Fähigkeiten der Studierenden zu bewerten.
+* **Referate und aktive Teilnahme:** Als ergänzende Bewertungsoption können die Studierenden Referate zu spezifischen Themenbereichen halten. Zudem wird die aktive Teilnahme am Unterricht bewertet, um Engagement und Beteiligung im Lernprozess zu fördern.
 
-Die Qualität der Umsetzung ist ein Bewertungskriterium. Eine weitere Bewertung wird durch eine PLÜ pro Semester stattfinden. Die PLÜ liefert messbare Hard Skills, die Arbeit in den Teams messbare Hard Skills aber auch Soft Skills. Eine zusätzliche Option sind Referate zu einzelnen Themenbereichen. + Mitarbeit, hier wird die aktive Teilnahme am Unterricht bewertet.
+## Lehrziele POS
+### Wintersemester (Matura Main-Facts)
+  * Umsetzung einer Todo-App
+  * C# Basics / .NET Basics
+  * LinQ
+  * OR-Mapper
+  * 3-Layer Architecture
+  * Basic-Patterns (Repository, Builder)
+  * Unit Tests
+  * API-Design
 
-* TODO: Bewertungskriterien
+### Sommersemester
+  * Umsetzung der Spengergram-App
+  * Clean Architecture
+  * Authentication
+  * Authorization
+  * Fluent API
+  * CQRS
+  * SOLID
+  * Advanced-Patterns (Mediator, Template, ...)
+  * Separation of Concern
+  * Middleware
+  * Caching
+  * TDD, BDD
 
-## Lernziele POS bis Ende
+## Lehrziele WMC
+### Wintersemester (Matura Main-Facts)
+  * Umsetzung einer Todo-App (Cross platform: Web/Mobile)
+  * JavaScript Recap (Promises, Async/Await, Destructuring, Spread Operator, ...)
+  * Typescript Basics
+  * React / React Native Basics
+  * JSX, Props, State, Hooks, Event Handling,
+  * Components, Services, Routing, Forms (VWA)
+  * Component-Patterns (Higher Order, Render-Props, Container, Provider)
+  * Unit Tests, End-to-End Tests (VWA)
+  * Design System in Figma, UI/UX Regeln (VWA)
+  * Component-Frameworks (Native Base)
+  * Rest API, Mocking API
 
-Ein Meilensteinplan der die Lehrinhalte bis zum jeweiligen Monatsende vorgibt. Für die Koordination sind Lehrvoraussetzungen aus PRE zu berücksichtigen (siehe Voraussetzungen seitens PRE)
+### Sommersemester
+  * Umsetzung der Spengergram-App (Cross platform: Web/Mobile)
+  * NX Mono Repository 
+  * NX Lib Architecture (UI, Data-Access, Features, Util)
+  * Advanced Component-Patterns (Container, Provider, Composition)
+  * Statement Management (VWA)
+  * Native Camera, Gallery, File-Upload, File-Download
+  * Native Features (Push-Notifications, Storage, Battery, Geolocation, ...)
+  * Infinity Scroll
+  * Offline First, Offline Sync
+  * Web Security / Mobile Security (VWA)
 
-### September
+## Spengergram-App
+### Spengergram-App Umsetzung
+  * **DevOps-Einführungsphase:** Die Entwicklung der Spengergram-App beginnt mit einer intensiven DevOps-Phase, die als Grundlage für die weitere App-Entwicklung dient.
+  * **Ziel der DevOps-Phase:** Diese Phase zielt darauf ab, die Entwicklungsprozesse zu optimieren, um eine effiziente und agile Implementierung der App-Funktionalitäten zu gewährleisten.
 
-* Übersicht über das zu implementierende Projekt
-* Einschulung IDE
-* Einschulung GIT
-* Aufbau einer CI-Pipeline
-* Aufbau Projektstruktur
 
-### Oktober
+### DevOps-Komponenten
+  * **Versionskontrolle:** Einsatz von Git und GitHub zur Verwaltung des Projektquellcodes und zur Zusammenarbeit im Team.
+  * **Continuous Integration und Continuous Deployment (CI/CD):** Nutzung von GitHub Actions zur Automatisierung von Tests, Builds und Deployments.
+  * **Containerisierung und Orchestrierung:** Verwendung von Docker für die Containerisierung der Anwendung und Kubernetes für das Management der Container in Produktionsumgebungen.
 
-* DDD
-* TDD
-* Erstes Demo-Feature mit der Klasse gemeinsam implementieren (From Requirement to Production)
+### DevOps-Voraussetzungen
+  * **Agile Softwareentwicklung:** Anwendung agiler Methoden mit Jira, Confluence, User Stories
 
-### November
+### Deployment
+  * Es wird ein Deployment auf einem Cloud-Provider (z.B. AWS, Azure, Google Cloud) angestrebt.
+  * Oder ein Deployment auf einem eigenen Server (z.B. Hetzner, ...)
 
-* Authentication/Authorisation
+## Spengergram-Features
+* Registrierung
+* Anmeldung / Abmeldung
+* Anzeigen der Timeline mit Posts als Infinite Scroll
+* Filtern, Sortieren und Suchen von Posts
+* Post erstellen, liken
+* Freundschaftsanfragen senden, annehmen, ablehnen
+* Kleines Admin-Dashboard für Statistiken und Benutzerverwaltung
 
-### Dezember
 
-* Features implementieren lassen, Feature by Feature.
-    * Requirement wird in PRE in Jira definiert
-    * Requirement wird in POS umgesetzt. (Red2Green Approach ; Refactoring ; Deployment)
-    * Requirement wird in WMC konsumiert
-* usw...
+## Lehrziele 1 bis 10 pro Semester / Fach
 
-Es wird nun in Sprints gearbeitet. Je nach Aufwand und Unterricht kann der Sprint 1-4 Wochen in Anspruch nehmen. Minimaler Zeitraum für einen Sprint ist aber eine Woche (8Std.). Jeder Sprint enthält idealerweise (muss nicht sein) einen neuen theoretischen Teil.
+Werden über den Sommer ausgearbeitet.
 
-Folgende Themen können sehr flexibel aufgeteilt werden. Aber idealerweise in folgender logischer Abfolge:
 
-* C#-Basics
-* Delegates
-* LinQ
-* OR-Mapper
-* Fluent API
-* Docker
-* Test Containers
-* Repository
-* Patterns (Repository, Builder, Mediator, Factory, Template, ...)
-* Clean Architecture
-* Services
-* Mocking
-* CQS/CQRS
-* SOLID
-* API Design
-* Middleware
+## Appendix: Matura Themen
+#### 1. Architektur von Web- und Mobile-Anwendungen
+- Frontend/Backend Aufteilung
+- REST, RESTful API
+- Komponentenkonzept (Clientseitig)
+- Controller, Services im Backend
+- Testen
 
-### Mai
+#### 2. Datenmanagement und Persistenz in Web- und Mobile-Anwendungen
+- CRUD Operationen und deren Abbildung im Frontend
+- CRUD Operationen und deren Abbildung im Backend
+- Validierung (clientseitig, serverseitig)
 
-* Messagin Broker (Rabbit MQ)
-* Rafactoring
-* Projekt fertig stellen
-* Noten machen
+#### 3. Development, Deployment und Betrieb von Web- und Mobile-Anwendungen
+- Containertechnik
+- Cloudprovider
+- Continuous deployment
 
-### Juni
+#### 4. Frameworks im Bereich der Web- und Mobile-Anwendungen
+- Komponentenkonzept (Clientseitig) in Hinblick auf Vue.js, Angular, ...
+- Entwicklungswerkzeuge
+- State Management
+- Andere Themen aus Vue, Angular, … die behandelt wurden.
 
-* Zeitreserve
+#### 5. Sicherheit in Web- und Mobile-Anwendungen
+- Authentication und Authorization
+- Implementierung im Backend
+- Implementierung im Frontend
+- Angriffsvektoren im Bereich der Webapplikationen
 
-## Lernziele WMC bis Ende
-
-Ein Meilensteinplan der die Lehrinhalte bis zum jeweiligen Monatsende vorgibt. Für die Koordination sind Lehrvoraussetzungen aus PRE zu berücksichtigen (siehe Voraussetzungen seitens PRE)
-
-### September
-
-* bitte mit Vorschlägen befüllen oder entfernen
-
-### Oktober
-
-* bitte mit Vorschlägen befüllen oder entfernen
-
-### November
-
-* bitte mit Vorschlägen befüllen oder entfernen
-
-### Dezember
-
-* bitte mit Vorschlägen befüllen oder entfernen
-
-### Jänner
-
-* bitte mit Vorschlägen befüllen oder entfernen
-
-### Februar
-
-* bitte mit Vorschlägen befüllen oder entfernen
-
-### März
-
-* bitte mit Vorschlägen befüllen oder entfernen
-
-### April
-
-* bitte mit Vorschlägen befüllen oder entfernen
-
-### Mai
-
-* Zeitreserve
-* Noten machen
-
-### Juni
-
-* Zeitreserve
-* Projektabschluss
-
-## Lernziele PRE bis Ende
-
-### September
-
-* bitte mit Vorschlägen befüllen oder entfernen
-
-### Oktober
-
-Bis hier würden wir grundlegende Infos über Projektmanagement benötigen. Was ist ein Projekt, Projektabgrenzung und Anforderungsmanagement. Weiters Basics zum Thema Agiles Projektmanagement und Nutzung der Tools Confluence und Jira.
-
-### November
-
-* bitte mit Vorschlägen befüllen oder entfernen
-
-### Dezember
-
-* bitte mit Vorschlägen befüllen oder entfernen
-
-### Jänner
-
-* bitte mit Vorschlägen befüllen oder entfernen
-
-### Februar
-
-* bitte mit Vorschlägen befüllen oder entfernen
-
-### März
-
-* bitte mit Vorschlägen befüllen oder entfernen
-
-### April
-
-* bitte mit Vorschlägen befüllen oder entfernen
-
-### Mai
-
-* Zeitreserve
-* Projektabschluss
-* Noten machen
-
-### Juni
-
-* Zeitreserve
+#### 6. User Experience & User Interfaces in Web- und Mobile-Anwendungen
+- Responsive und Adaptive Design
+- Auszeichnungssprachen für die Gestaltung
+- Formulargestaltung
+- Barrierefreies Webdesign
