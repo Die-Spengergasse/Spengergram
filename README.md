@@ -52,12 +52,13 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für zukünftig
 ## Lehrziele WMC
 ### Wintersemester (Matura Main-Facts)
   * Umsetzung einer Todo-App (Cross platform: Web/Mobile)
-  * JavaScript Recap (Promises, Async/Await, Destructuring, Spread Operator, ...)
-  * Typescript Basics
+  * JavaScript Recap (Promises, Spread Operator, Rest Parameter, Destructuring, Classes,...)
+  * Typescript Basics (Types, Interfaces, Enums, Generics, ...)
+  * Setup Workspace (Node, Yarn, ESLint, Jest, Vite, Prettier, ...)
   * React / React Native Basics
   * JSX, Props, State, Hooks, Event Handling,
   * Components, Services, Routing, Forms (VWA)
-  * Component-Patterns (Higher Order, Render-Props, Container, Provider)
+  * Component-Patterns (Higher Order, Render-Props)
   * Unit Tests, End-to-End Tests (VWA)
   * Design System in Figma, UI/UX Regeln (VWA)
   * Component-Frameworks (Native Base)
@@ -67,7 +68,7 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für zukünftig
   * Umsetzung der Spengergram-App (Cross platform: Web/Mobile)
   * NX Mono Repository 
   * NX Lib Architecture (UI, Data-Access, Features, Util)
-  * Advanced Component-Patterns (Container, Provider, Composition)
+  * Advanced Component-Patterns (Context API, Container, Provider, Composition)
   * Statement Management (VWA)
   * Native Camera, Gallery, File-Upload, File-Download
   * Native Features (Push-Notifications, Storage, Battery, Geolocation, ...)
