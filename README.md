@@ -46,13 +46,13 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
   * Authorization
   * Fluent API
   * CQRS
-  * MediatR
   * SOLID
   * Advanced-Patterns (Mediator, Template, ...)
   * Separation of Concern
   * Middleware
   * Caching
   * TDD, BDD
+  * OpenAPI Specification (Konsistente BE/FE Validierung)
 
 ## Lehrziele WMC
 ### Wintersemester (Matura Main-Facts)
@@ -65,6 +65,7 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
   * JSX, Props, State, Hooks, Event Handling, Lifecycle Methods
   * Components (Stateful vs Stateless), Services, Routing, Forms (VWA)
   * Component-Patterns (Higher Order, Render-Props)
+  * Validation, Error Handling
   * Unit Tests, End-to-End Tests (VWA)
   * Design System, Design Tokens, Figma, Theming, UI/UX Regeln (VWA)
   * Component-Frameworks (Native Base)
@@ -77,10 +78,11 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
   * Application Shell Pattern, Feature Shell Pattern
   * Advanced Component-Patterns (Container, Provider, Composition)
   * Statement Management (VWA)
-  * Lazy Loading, Progress Indicator, Skeletons, Error Handling
+  * Lazy Loading, Progress Indicator, Skeletons
   * Native Camera, Gallery, File-Upload, File-Download
   * Native Features (Push-Notifications, Storage, Battery, Geolocation, ...)
   * Infinity Scroll
+  * Debugging, Logging, Error Tracking (sentry.io)
   * Offline First, Offline Sync
   * Web Security / Mobile Security (VWA)
   * Mobile Apps vs Progressive Web Apps (PWA)
