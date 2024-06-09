@@ -1,5 +1,7 @@
 # Spengergram 🥳
 
+### The last social media app you'll (n)ever need ;-)
+
 ### `From 0 to Hero: Master Software Engineering on Your Learning Journey with Spengergram!`
 
 ## Beschreibung
