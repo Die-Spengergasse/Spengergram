@@ -46,6 +46,7 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
   * Authorization
   * Fluent API
   * CQRS
+  * MediatR
   * SOLID
   * Advanced-Patterns (Mediator, Template, ...)
   * Separation of Concern
