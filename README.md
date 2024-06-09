@@ -58,10 +58,10 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
   * Typescript Basics (Types, Interfaces, Enums, Generics, ...)
   * Setup Workspace (Node, Yarn, ESLint, Babel, Jest, Vite, Prettier, ...)
   * React / React Native Basics
-  * JSX, Props, State, Hooks, Event Handling,
+  * React/JSX Style Guide
+  * JSX, Props, State, Hooks, Event Handling, Lifecycle Methods
   * Components (Stateful vs Stateless), Services, Routing, Forms (VWA)
   * Component-Patterns (Higher Order, Render-Props)
-  * React/JSX Style Guide
   * Unit Tests, End-to-End Tests (VWA)
   * Design System, Design Tokens, Figma, Theming, UI/UX Regeln (VWA)
   * Component-Frameworks (Native Base)
@@ -72,7 +72,7 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
   * NX Mono Repository 
   * NX Lib Architecture (UI, Data-Access, Features, Util)
   * Application Shell Pattern, Feature Shell Pattern
-  * Advanced Component-Patterns (Context API, Container, Provider, Composition)
+  * Advanced Component-Patterns (Container, Provider, Composition)
   * Statement Management (VWA)
   * Lazy Loading, Progress Indicator, Skeletons, Error Handling
   * Native Camera, Gallery, File-Upload, File-Download
@@ -85,12 +85,7 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
 ## Spengergram-App
 
 * Die Spengergram-App beginnt nach der Todo-App und baut auf den erworbenen Kenntnissen und Fähigkeiten auf.
-
-### Umsetzung
-
-* **Grundlage der Umsetzung:** Die Umsetzung der Spengergram-App erfolgt mittels bekannter agiler Softwaremethoden und DevOps-Praktiken.
-* **DevOps-Einführungsphase**: Die Entwicklung der Spengergram-App beginnt mit einer intensiven DevOps-Phase, die darauf abzielt,
-die Entwicklungsprozesse zu optimieren und ein solides Fundament für agile Implementierungen zu schaffen.
+* Die Umsetzung erfolgt mittels bekannter moderner Softwareentwicklung- und DevOps-Praktiken.
 
 ### DevOps-Komponenten
 * **Infrastruktur-Automatisierung**: Einsatz von Infrastructure as Code (IaC).
@@ -102,13 +97,15 @@ die Entwicklungsprozesse zu optimieren und ein solides Fundament für agile Impl
 * **Monitoring:** Kontinuierliche Überwachung der Anwendungsleistung und Systemressourcen, um Probleme frühzeitig zu erkennen und die Systemstabilität sicherzustellen.
 * **Logging:** Protokollierung von System- und Anwendungsereignissen, die für die Fehlerdiagnose und die Performance-Analyse entscheidend sind.
 
+### DevOps-Voraussetzungen
+* **Moderne Softwareentwicklungs-Praktiken:** Nutzung von Tools wie `Jira` und `Confluence` für die Organisation und Kollaboration im Team.
+Einsatz von `Miro` und `Figma` zur Unterstützung der visuellen Zusammenarbeit und Designprozesse.
+Anwendung von `User Stories`, ergänzt durch Entwicklungspraktiken wie `Test-Driven Development (TDD)` und `Behavior-Driven Development (BDD)`.
+
 ### Deployment
 * **Cloud:** Es wird ein Deployment auf einem Cloud-Provider (z.B. AWS, Azure, Google Cloud) angestrebt.
 * **Eigener Server**: Oder ein Deployment auf einem eigenen Server (z.B. Hetzner, ...)
 * **Deployment-Strategien**: Feature-Flags, Canary-Deployment, A/B-Testing, ...
-
-### DevOps-Voraussetzungen
-* **Agile Softwareentwicklung:** Anwendung agiler Methoden mit Jira, Confluence, User Stories
 
 ### Features
 * Registrierung
@@ -125,6 +122,16 @@ die Entwicklungsprozesse zu optimieren und ein solides Fundament für agile Impl
 ## Lehrziele 1 bis 10 pro Semester / Fach
 
 Werden über den Sommer ausgearbeitet.
+
+## Lehrziel Struktur
+1. Titel 
+2. Kontext und Bedeutung des Themas 
+3. Problemstellung / Lösung 
+4. Theoretischer Hintergrund 
+5. Praktische Beispiele 
+6. Aufgabenstellung für das Pull Request 
+7. Quiz 
+8. Reflexion
 
 ## Appendix: Matura Themen
 #### 1. Architektur von Web- und Mobile-Anwendungen
