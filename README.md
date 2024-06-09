@@ -15,10 +15,10 @@ Dies ermöglicht es ihnen, sowohl theoretisches Wissen als auch praktische Fähi
 Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomprojekte und berufliche Vorhaben nutzen können.
 
 ## Lehrmethodik
-* **Flipped Classroom:** Der Foliensatz für die kommende Woche wird jeweils in der Vorwoche ausgegeben. Die Studierenden sind angehalten, diesen über das Wochenende anzusehen und sich vorzubereiten, wobei sie etwa 15 bis 30 Minuten investieren sollten. Zu Beginn jeder Unterrichtseinheit wird ein Quiz durchgeführt, um die Vorbereitung und das Verständnis der Studierenden zu überprüfen und sicherzustellen, dass sie aktiv mit dem Lernmaterial gearbeitet haben.
 * **Etwa 10 große Lehrziele pro Semester:** Die Studierenden arbeiten an umfangreichen Lehrzielen, die breit gefächerte Kompetenzen abdecken, incl. Bonus-Lehrziele.
-* **Individuelle Vorbereitung:** Die Vorbereitung der Studierenden wird als Teil der fortlaufenden Bewertung ihrer Mitarbeit gewertet.
-* **Interaktive Entwicklung:** Jede Woche beginnt mit der Vorstellung des Lehrziels, das zunehmend gemeinsam entwickelt wird, wobei der Anteil der Lehrenden schrittweise abnimmt. Dies fördert die Selbstständigkeit und praktische Anwendung des Gelernten.
+* **Flipped Classroom:** Der Foliensatz für die kommende Woche wird jeweils in der Vorwoche ausgegeben, um die Vorbereitung zu erleichtern.
+* **Individuelle Vorbereitung:** Die Vorbereitung der Studierenden wird als Teil der fortlaufenden Bewertung ihrer Mitarbeit gewertet und mit Quizzen überprüft.
+* **Interaktive Entwicklung:** Jede Woche beginnt mit der Vorstellung des Lehrziels, das zunehmend gemeinsam entwickelt wird, wobei der Anteil der Lehrenden schrittweise abnimmt.
 * **Abschluss durch Studierende:** Der Abschluss jedes Lehrziels erfolgt durch die Studierenden; die Beurteilung geschieht über Pull-Requests, um praktische Softwareentwicklungskompetenzen zu bewerten.
 * **Nachträgliche Auflösung:** Die Auflösung und Besprechung der Lehrziele erfolgt nachträglich, um ein tiefgreifendes Verständnis und die Reflexion über die gelösten Aufgaben zu gewährleisten.
 
