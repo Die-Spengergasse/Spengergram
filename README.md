@@ -32,7 +32,7 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
 ### Wintersemester (Matura Main-Facts)
   * *Umsetzung einer Todo-App*
   * C# Basics / .NET Basics und Unterschiede zum bekannten Java
-  * Domain Modellierung: Rich Domain Model (Entities, Value Objects, Logik, Validierung)
+  * DDD: Entities, Value Objects, Logik, Validierung
   * LinQ: Übungen und praktische Beispiele
   * OR-Mapper: Code First / Database First, Fluent API
   * 3-Layer Architecture

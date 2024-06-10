@@ -6,7 +6,7 @@ namespace Spg.Spengergram.DomainModel.Model
     public class User : IFindableByGuid, IFindableByEMail
     {
         public UserId Id { get; } = default!;
-        public Guid Guid { get; set; }
+        public Guid Guid { get; }
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
         public Username Username { get; } = default!;
@@ -14,8 +14,14 @@ namespace Spg.Spengergram.DomainModel.Model
         public int Evaluation { get; set; } = 0;
         public DateTime BirthDate { get; set; }
 
+        // Collections
         private List<PhoneNumber> _phoneNumbers = new();
         public IReadOnlyList<PhoneNumber> PhoneNumbers => _phoneNumbers;
+
+        private List<Messenger> _messengers = new();
+        public IReadOnlyList<Messenger> Messages => _messengers;
+
+        // Navigations
 
         protected User()
         { }

@@ -1,6 +1,7 @@
 ﻿namespace Spg.Spengergram.DomainModel.Model
 {
-    public class Video
+    public class Video : Media
     {
+
     }
 }
