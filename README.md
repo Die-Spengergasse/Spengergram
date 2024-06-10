@@ -41,8 +41,8 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
   * Data Validation: Simpel
   * API-Design: URI, Controller, Http-Methods, Status Codes
 
-### Sommersemester (Die ersten teile werden bereits im WS gestartet)
-  * Umsetzung der Spengergram-App
+### Sommersemester (Die ersten Teile werden bereits im WS gestartet)
+  * *Umsetzung der Spengergram-App*
   * Clean Architecture
   * Authentication: Basics, OAuth, JWT, Session-Token, Auth-Provider,
   * Authorization: Role Based und Policy Based Authentication. Umsetzung mit Identity Framework
@@ -65,7 +65,7 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
 
 ## Lehrziele WMC
 ### Wintersemester (Matura Main-Facts)
-  * Umsetzung einer Todo-App (Cross platform: Web/Mobile)
+  * *Umsetzung einer Todo-App (Cross platform: Web/Mobile)*
   * JavaScript Recap (Promises, Spread Operator, Rest Parameter, Destructuring, Classes,...)
   * Typescript Basics (Types, Interfaces, Enums, Generics, ...)
   * Setup Workspace (Node, Yarn, ESLint, Babel, Jest, Vite, Prettier, ...)
@@ -80,8 +80,8 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
   * Component-Frameworks (Native Base)
   * Rest API, Mock API
 
-### Sommersemester
-  * Umsetzung der Spengergram-App (Cross platform: Web/Mobile)
+### Sommersemester (Die ersten Teile werden bereits im WS gestartet)
+  * *Umsetzung der Spengergram-App (Cross platform: Web/Mobile)*
   * NX Mono Repository 
   * NX Lib Architecture (UI, Data-Access, Features, Util)
   * Application Shell Pattern, Feature Shell Pattern
