@@ -21,6 +21,9 @@ namespace Spg.Spengergram.DomainModel.Model
         private List<Messenger> _messengers = new();
         public IReadOnlyList<Messenger> Messages => _messengers;
 
+        private List<Reaction> _reactions = new();
+        public IReadOnlyList<Reaction> Reactions => _reactions;
+
         // Navigations
 
         protected User()

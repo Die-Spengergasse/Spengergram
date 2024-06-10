@@ -2,7 +2,7 @@
 {
     public class Messenger
     {
-        public int Id { get; set; }
+        public int Id { get; }
         public Guid Guid { get; }
 
         // Collections
@@ -11,8 +11,5 @@
 
         private List<Message> _messages = new();
         public IReadOnlyList<Message> Messages => _messages;
-
-        // Navigations
-
     }
 }

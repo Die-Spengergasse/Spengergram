@@ -7,8 +7,8 @@
         public DateTime CreationDateTime { get; }
 
         // Collections
-        private List<User> _usersLiked = new();
-        public IReadOnlyList<User> UsersLiked => _usersLiked;
+        private List<Reaction> _reactions = new();
+        public IReadOnlyList<Reaction> Reactions => _reactions;
 
         // Navigations
         public User CreatedBy { get; } = default!;

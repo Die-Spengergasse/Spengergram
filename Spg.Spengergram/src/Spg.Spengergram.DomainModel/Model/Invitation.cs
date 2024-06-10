@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Spg.Spengergram.DomainModel.Model
+﻿namespace Spg.Spengergram.DomainModel.Model
 {
     public class Invitation
     {
-        public int Id { get; set; }
+        public int Id { get; }
         public Guid Guid { get; }
         public User From { get; set; } = default!;
         public User To { get; set; } = default!;
