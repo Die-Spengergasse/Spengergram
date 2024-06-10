@@ -1,6 +1,11 @@
 ﻿namespace Spg.Spengergram.DomainModel.Model
 {
-    public enum ReactionType { Smile, Lough, LoL, ThumpUp }
+    public enum ReactionType 
+    {
+        // https://www.engagebay.com/blog/emojis-with-meaning/
+        Smile, Laughing, LaughingCrying, BlushingSmileyFaceWithHearts, HeartShapedEyesFace,
+        Mad, Hug, AstonishedFace, EyeRoll, DisappointedFace, NerdFace, ThumbsUp, RedHeart
+    }
 
     public class Reaction
     {
