@@ -30,28 +30,36 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
 
 ## Lehrziele POS
 ### Wintersemester (Matura Main-Facts)
-  * Umsetzung einer Todo-App
-  * C# Basics / .NET Basics
-  * LinQ
-  * OR-Mapper
+  * *Umsetzung einer Todo-App*
+  * C# Basics / .NET Basics und Unbterschiede zum bekannten Java
+  * Domain Modellierung: Rich Domain Model (Entities, Value Objects, Logik, Validierung)
+  * LinQ: Übungen und praktische Beispiele
+  * OR-Mapper: Code First / Database First, Fluent API
   * 3-Layer Architecture
   * Basic-Patterns (Repository, Builder)
-  * Unit Tests
-  * API-Design
+  * Unit Testing: Simpel
+  * Data Validfation: Simpel
+  * API-Design: URI, Controller, Http-Methods, Satus Codes
 
-### Sommersemester
+### Sommersemester (Die ersten teile werden bereits im WS gestartet)
   * Umsetzung der Spengergram-App
   * Clean Architecture
-  * Authentication
-  * Authorization
-  * Fluent API
-  * CQRS
-  * SOLID
-  * Advanced-Patterns (Mediator, Template, ...)
+  * Authentication: Basics, OAuth, JWT, Session-Token, Auth-Provider,
+  * Authorization: Role Based und Policy Based Authentication. Umsetzung mit Identity Framework
+  * Fluent API: Fluent API udn Chaining selbst erstellen können.
+  * CQS / CQRS: CQS in praktischer Umsetzung, CQRS wenn Zeit bleibt.
+  * Event Sourcing: Mit RabbitMQ als Message Broker (als Docker-Container)
+  * S.O.L.I.D.: Wird theoretisch besprochen und vorgezeigt. Hier sind eigene Aufagben zu lösen.
+  * Advanced-Patterns (Mediator, Fluent API, Template, ...)
+  * Composability: Wird anhand CQS gezeigt
   * Separation of Concern
-  * Middleware
+  * Action Filter: Erstellung und Anwendung
+  * Middleware: Erstellung und Anwendung, Unterschiede zu Action Filtern
   * Caching
-  * TDD, BDD
+  * Logging / Tracing: Umsetzung direkt und mit APO
+  * Data Validation: Validierung in allen Schichten inkl. Datenbank
+  * TDD, BDD: Mocking, Fluent Assertion
+  * Integration Testing: Controller Testing mit Mock-MVC
   * OpenAPI Specification (Konsistente BE/FE Validierung)
 
 ## Lehrziele WMC

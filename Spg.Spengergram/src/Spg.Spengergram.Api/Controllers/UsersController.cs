@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Spg.Spengergram.Application.UseCases.UserStories.Commands;
 using Spg.Spengergram.Application.UseCases.UserStories.Queries;
@@ -20,6 +19,7 @@ namespace Spg.Spengergram.Api.Controllers
         {
             _mediator = mediator;
         }
+
         //                  -property- -operation- -value-
         // api/users?filter=lastname    ct         asd
         [HttpGet()]
