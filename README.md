@@ -31,15 +31,15 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
 ## Lehrziele POS
 ### Wintersemester (Matura Main-Facts)
   * *Umsetzung einer Todo-App*
-  * C# Basics / .NET Basics und Unbterschiede zum bekannten Java
+  * C# Basics / .NET Basics und Unterschiede zum bekannten Java
   * Domain Modellierung: Rich Domain Model (Entities, Value Objects, Logik, Validierung)
   * LinQ: Übungen und praktische Beispiele
   * OR-Mapper: Code First / Database First, Fluent API
   * 3-Layer Architecture
   * Basic-Patterns (Repository, Builder)
   * Unit Testing: Simpel
-  * Data Validfation: Simpel
-  * API-Design: URI, Controller, Http-Methods, Satus Codes
+  * Data Validation: Simpel
+  * API-Design: URI, Controller, Http-Methods, Status Codes
 
 ### Sommersemester (Die ersten teile werden bereits im WS gestartet)
   * Umsetzung der Spengergram-App
@@ -49,7 +49,8 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
   * Fluent API: Fluent API udn Chaining selbst erstellen können.
   * CQS / CQRS: CQS in praktischer Umsetzung, CQRS wenn Zeit bleibt.
   * Event Sourcing: Mit RabbitMQ als Message Broker (als Docker-Container)
-  * S.O.L.I.D.: Wird theoretisch besprochen und vorgezeigt. Hier sind eigene Aufagben zu lösen.
+  * S.O.L.I.D.: Wird theoretisch besprochen und vorgezeigt. Hier sind eigene Aufgaben zu lösen.
+  * Inversion of Control: Dependency Inversion, Dependency Injection
   * Advanced-Patterns (Mediator, Fluent API, Template, ...)
   * Composability: Wird anhand CQS gezeigt
   * Separation of Concern
