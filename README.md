@@ -31,7 +31,19 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
 ## Lehrziele POS
 ### Wintersemester (Matura Main-Facts)
   * *Umsetzung einer Todo-App*
-  * **C# Basics / .NET Basics und Unterschiede zum bekannten Java [GRUNDLEGEND]**
+  * C# Basics / .NET Basics und Unterschiede zum bekannten Java
+    * Wertetypen / Referenztypen [GRUNDLEGEND]
+    * Partial Types
+    * Überladene Operatoren
+    * Initializer
+    * Vererbung
+    * Collections (Übersicht, foreach-Keyword) [GRUNDLEGEND]
+    * Spread-Operator ([..])
+    * Anonymous Types [GRUNDLEGEND]
+    * Delegates [GRUNDLEGEND]
+    * Lambdas [GRUNDLEGEND]
+    * Nullable Feature
+    * Return Tuples
   * DDD
     * **Entities, Value Objects, Validierung [GRUNDLEGEND]**
     * Logik
