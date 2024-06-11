@@ -33,24 +33,28 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
   * *Umsetzung einer Todo-App*
   * C# Basics / .NET Basics und Unterschiede zum bekannten Java
     * **Wertetypen / Referenztypen [GRUNDLEGEND]**
+    * **Collections (Übersicht, foreach-Keyword) [GRUNDLEGEND]**
+    * **Anonymous Types [GRUNDLEGEND]**
+    * **Delegates [GRUNDLEGEND]**
+    * **Lambdas [GRUNDLEGEND]**
     * Partial Types
     * Überladene Operatoren
     * Initializer
     * Vererbung
-    * **Collections (Übersicht, foreach-Keyword) [GRUNDLEGEND]**
     * Spread-Operator ([..])
-    * **Anonymous Types [GRUNDLEGEND]**
-    * **Delegates [GRUNDLEGEND]**
-    * **Lambdas [GRUNDLEGEND]**
     * Nullable Feature
     * Return Tuples
+    * Extension Methods
   * DDD
-    * **Entities, Value Objects, Validierung [GRUNDLEGEND]**
+    * **Entities, Value Objects [GRUNDLEGEND]**
+    * Validations
     * Logik
+    * DTO-Mapping
   * **LinQ: Übungen und praktische Beispiele [GRUNDLEGEND]**
-  * **OR-Mapper: Code First  [GRUNDLEGEND]**
-    * Database First
+  * OR-Mapper: 
+    * **Code First  [GRUNDLEGEND]**
     * **Data Annotations [GRUNDLEGEND]**
+    * Database First
     * Fluent API
   * 3-Layer Architecture [GRUNDLEGEND]
   * Basic-Patterns:
@@ -66,7 +70,8 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
   * Authentication: Basics, OAuth, JWT, Session-Token, Auth-Provider,
   * Authorization: Role Based und Policy Based Authentication. Umsetzung mit Identity Framework
   * Fluent API: Fluent API udn Chaining selbst erstellen können.
-  * **CQS [GRUNDLEGEND]**
+  * CQS / CQRS
+    * **CQS [GRUNDLEGEND]**
     * CQRS: CQS in praktischer Umsetzung, CQRS wenn Zeit bleibt.
   * Event Sourcing: Mit RabbitMQ als Message Broker (als Docker-Container)
   * **S.O.L.I.D.: Wird theoretisch besprochen und vorgezeigt. Hier sind eigene Aufgaben zu lösen. [GRUNDLEGEND]**
