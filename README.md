@@ -32,16 +32,16 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
 ### Wintersemester (Matura Main-Facts)
   * *Umsetzung einer Todo-App*
   * C# Basics / .NET Basics und Unterschiede zum bekannten Java
-    * Wertetypen / Referenztypen [GRUNDLEGEND]
+    * **Wertetypen / Referenztypen [GRUNDLEGEND]**
     * Partial Types
     * Überladene Operatoren
     * Initializer
     * Vererbung
-    * Collections (Übersicht, foreach-Keyword) [GRUNDLEGEND]
+    * **Collections (Übersicht, foreach-Keyword) [GRUNDLEGEND]**
     * Spread-Operator ([..])
-    * Anonymous Types [GRUNDLEGEND]
-    * Delegates [GRUNDLEGEND]
-    * Lambdas [GRUNDLEGEND]
+    * **Anonymous Types [GRUNDLEGEND]**
+    * **Delegates [GRUNDLEGEND]**
+    * **Lambdas [GRUNDLEGEND]**
     * Nullable Feature
     * Return Tuples
   * DDD
