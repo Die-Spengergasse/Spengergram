@@ -40,7 +40,7 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
     * Database First
     * **Data Annotations [GRUNDLEGEND]**
     * Fluent API
-  * **3-Layer Architecture [GRUNDLEGEND]**
+  * 3-Layer Architecture [GRUNDLEGEND]
   * Basic-Patterns:
     * **Repository [GRUNDLEGEND]**
     * Builder
