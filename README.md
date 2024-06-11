@@ -31,21 +31,22 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
 ## Lehrziele POS
 ### Wintersemester (Matura Main-Facts)
   * *Umsetzung einer Todo-App*
-  * *C# Basics / .NET Basics und Unterschiede zum bekannten Java [GRUNDLEGEND]*
+  * **C# Basics / .NET Basics und Unterschiede zum bekannten Java [GRUNDLEGEND]**
   * DDD
-    * *Entities, Value Objects, Validierung [GRUNDLEGEND]*
+    * **Entities, Value Objects, Validierung [GRUNDLEGEND]**
     * Logik
-  * *LinQ: Übungen und praktische Beispiele [GRUNDLEGEND]*
-  * *OR-Mapper: Code First  [GRUNDLEGEND]*
+  * **LinQ: Übungen und praktische Beispiele [GRUNDLEGEND]**
+  * **OR-Mapper: Code First  [GRUNDLEGEND]**
     * Database First
+    * **Data Annotations [GRUNDLEGEND]**
     * Fluent API
-  * *3-Layer Architecture [GRUNDLEGEND]*
+  * **3-Layer Architecture [GRUNDLEGEND]**
   * Basic-Patterns:
-    * *Repository [GRUNDLEGEND]*
+    * **Repository [GRUNDLEGEND]**
     * Builder
-  * *Unit Testing: Simpel [GRUNDLEGEND]*
-  * *Data Validation: Simpel [GRUNDLEGEND]*
-  * *API-Design: URI, Controller, Http-Methods, Status Codes [GRUNDLEGEND]*
+  * **Unit Testing: Simpel [GRUNDLEGEND]**
+  * **Data Validation: Simpel [GRUNDLEGEND]**
+  * **API-Design: URI, Controller, Http-Methods, Status Codes [GRUNDLEGEND]**
 
 ### Sommersemester (Die ersten Teile werden bereits im WS gestartet)
   * *Umsetzung der Spengergram-App*
@@ -53,20 +54,20 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
   * Authentication: Basics, OAuth, JWT, Session-Token, Auth-Provider,
   * Authorization: Role Based und Policy Based Authentication. Umsetzung mit Identity Framework
   * Fluent API: Fluent API udn Chaining selbst erstellen können.
-  * *CQS / CQRS: CQS in praktischer Umsetzung, CQRS wenn Zeit bleibt. [GRUNDLEGEND]*
+  * **CQS / CQRS: CQS in praktischer Umsetzung, CQRS wenn Zeit bleibt. [GRUNDLEGEND]**
   * Event Sourcing: Mit RabbitMQ als Message Broker (als Docker-Container)
-  * *S.O.L.I.D.: Wird theoretisch besprochen und vorgezeigt. Hier sind eigene Aufgaben zu lösen. [GRUNDLEGEND]*
-  * *Inversion of Control: Dependency Inversion, Dependency Injection [GRUNDLEGEND]*
+  * **S.O.L.I.D.: Wird theoretisch besprochen und vorgezeigt. Hier sind eigene Aufgaben zu lösen. [GRUNDLEGEND]**
+  * **Inversion of Control: Dependency Inversion, Dependency Injection [GRUNDLEGEND]**
   * Advanced-Patterns (Mediator, Fluent API, Template, ...)
   * Composability: Wird anhand CQS gezeigt
-  * *Separation of Concern [GRUNDLEGEND]*
-  * *Action Filter: Erstellung und Anwendung [GRUNDLEGEND]*
+  * **Separation of Concern [GRUNDLEGEND]**
+  * **Action Filter: Erstellung und Anwendung [GRUNDLEGEND]**
   * Middleware: Erstellung und Anwendung, Unterschiede zu Action Filtern
   * Caching
   * Logging / Tracing: Umsetzung direkt und mit APO
-  * *Data Validation: Validierung in allen Schichten inkl. Datenbank [GRUNDLEGEND]*
+  * **Data Validation: Validierung in allen Schichten inkl. Datenbank [GRUNDLEGEND]**
   * TDD:
-    * *Test Driven [GRUNDLEGEND]*
+    * **Test Driven [GRUNDLEGEND]**
     * BDD
     * Mocking
     * Fluent Assertion
