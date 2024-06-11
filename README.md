@@ -66,7 +66,8 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
   * Authentication: Basics, OAuth, JWT, Session-Token, Auth-Provider,
   * Authorization: Role Based und Policy Based Authentication. Umsetzung mit Identity Framework
   * Fluent API: Fluent API udn Chaining selbst erstellen können.
-  * **CQS / CQRS: CQS in praktischer Umsetzung, CQRS wenn Zeit bleibt. [GRUNDLEGEND]**
+  * **CQS [GRUNDLEGEND]**
+    * CQRS: CQS in praktischer Umsetzung, CQRS wenn Zeit bleibt.
   * Event Sourcing: Mit RabbitMQ als Message Broker (als Docker-Container)
   * **S.O.L.I.D.: Wird theoretisch besprochen und vorgezeigt. Hier sind eigene Aufgaben zu lösen. [GRUNDLEGEND]**
   * **Inversion of Control: Dependency Inversion, Dependency Injection [GRUNDLEGEND]**
