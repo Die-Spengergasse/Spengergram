@@ -31,15 +31,21 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
 ## Lehrziele POS
 ### Wintersemester (Matura Main-Facts)
   * *Umsetzung einer Todo-App*
-  * C# Basics / .NET Basics und Unterschiede zum bekannten Java
-  * DDD: Entities, Value Objects, Logik, Validierung
-  * LinQ: Übungen und praktische Beispiele
-  * OR-Mapper: Code First / Database First, Fluent API
-  * 3-Layer Architecture
-  * Basic-Patterns (Repository, Builder)
-  * Unit Testing: Simpel
-  * Data Validation: Simpel
-  * API-Design: URI, Controller, Http-Methods, Status Codes
+  * *C# Basics / .NET Basics und Unterschiede zum bekannten Java [GRUNDLEGEND]*
+  * DDD
+    * *Entities, Value Objects, Validierung [GRUNDLEGEND]*
+    * Logik
+  * *LinQ: Übungen und praktische Beispiele [GRUNDLEGEND]*
+  * *OR-Mapper: Code First  [GRUNDLEGEND]*
+    * Database First
+    * Fluent API
+  * *3-Layer Architecture [GRUNDLEGEND]*
+  * Basic-Patterns:
+    * *Repository [GRUNDLEGEND]*
+    * Builder
+  * *Unit Testing: Simpel [GRUNDLEGEND]*
+  * *Data Validation: Simpel [GRUNDLEGEND]*
+  * *API-Design: URI, Controller, Http-Methods, Status Codes [GRUNDLEGEND]*
 
 ### Sommersemester (Die ersten Teile werden bereits im WS gestartet)
   * *Umsetzung der Spengergram-App*
@@ -47,21 +53,26 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
   * Authentication: Basics, OAuth, JWT, Session-Token, Auth-Provider,
   * Authorization: Role Based und Policy Based Authentication. Umsetzung mit Identity Framework
   * Fluent API: Fluent API udn Chaining selbst erstellen können.
-  * CQS / CQRS: CQS in praktischer Umsetzung, CQRS wenn Zeit bleibt.
+  * *CQS / CQRS: CQS in praktischer Umsetzung, CQRS wenn Zeit bleibt. [GRUNDLEGEND]*
   * Event Sourcing: Mit RabbitMQ als Message Broker (als Docker-Container)
-  * S.O.L.I.D.: Wird theoretisch besprochen und vorgezeigt. Hier sind eigene Aufgaben zu lösen.
-  * Inversion of Control: Dependency Inversion, Dependency Injection
+  * *S.O.L.I.D.: Wird theoretisch besprochen und vorgezeigt. Hier sind eigene Aufgaben zu lösen. [GRUNDLEGEND]*
+  * *Inversion of Control: Dependency Inversion, Dependency Injection [GRUNDLEGEND]*
   * Advanced-Patterns (Mediator, Fluent API, Template, ...)
   * Composability: Wird anhand CQS gezeigt
-  * Separation of Concern
-  * Action Filter: Erstellung und Anwendung
+  * *Separation of Concern [GRUNDLEGEND]*
+  * *Action Filter: Erstellung und Anwendung [GRUNDLEGEND]*
   * Middleware: Erstellung und Anwendung, Unterschiede zu Action Filtern
   * Caching
   * Logging / Tracing: Umsetzung direkt und mit APO
-  * Data Validation: Validierung in allen Schichten inkl. Datenbank
-  * TDD, BDD: Mocking, Fluent Assertion
+  * *Data Validation: Validierung in allen Schichten inkl. Datenbank [GRUNDLEGEND]*
+  * TDD:
+    * *Test Driven [GRUNDLEGEND]*
+    * BDD
+    * Mocking
+    * Fluent Assertion
   * Integration Testing: Controller Testing mit Mock-MVC
   * OpenAPI Specification (Konsistente BE/FE Validierung)
+  * HATEOAS
 
 ## Lehrziele WMC
 ### Wintersemester (Matura Main-Facts)
