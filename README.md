@@ -14,7 +14,14 @@ Das Ziel des Projekts ist es, den Studierenden eine praxisnahe Erfahrung zu biet
 Dies ermöglicht es ihnen, sowohl theoretisches Wissen als auch praktische Fähigkeiten in der Entwicklung von Web- und Mobile-Anwendungen anzuwenden.
 Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomprojekte und berufliche Vorhaben nutzen können.
 
+## Vision
+Die grundlegende Vision von Spengergram ist es, POS, WMC, PRE und BWM zu integrieren, um Studierenden anhand eines realen Softwareprojekts eine umfassende, praxisnahe Ausbildung in Softwareentwicklung und
+interdisziplinärer Zusammenarbeit zu ermöglichen, sie bei ihren Diplomprojekten zu unterstützen und bestmöglich auf das Arbeitsleben in Softwareprojekten vorzubereiten.
+
 ## Lehrmethodik
+* **Git-Book:** Die Lehrinhalte werden in einem Git-Book bereitgestellt, das den Studierenden einen strukturierten Überblick über die Lehrziele, Aufgaben und Ressourcen bietet.
+* **Git-Classroom:** Die Studierenden arbeiten an den Lehrzielen und reichen ihre Lösungen über Git-Classroom ein.
+* **Folien:** Die Lehrinhalte werden in zusammengefasster Form in Folien präsentiert.
 * **Etwa 10 große Lehrziele pro Semester:** Die Studierenden arbeiten an umfangreichen Lehrzielen, die breit gefächerte Kompetenzen abdecken, incl. Bonus-Lehrziele.
 * **Flipped Classroom:** Der Foliensatz für die kommende Woche wird jeweils in der Vorwoche ausgegeben, um die Vorbereitung zu erleichtern.
 * **Individuelle Vorbereitung:** Die Vorbereitung der Studierenden wird als Teil der fortlaufenden Bewertung ihrer Mitarbeit gewertet und mit Quizzen überprüft.
@@ -47,7 +54,7 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
     * Return Tuples
     * Extension Methods
   * DDD
-    * **Entities, Value Objects [GRUNDLEGEND]**
+    * **Aggregates, Entities, Value Objects [GRUNDLEGEND]**
     * Validations
     * Logik
     * DTO-Mapping
@@ -69,7 +76,7 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
 ### Sommersemester (Die ersten Teile werden bereits im WS gestartet)
   * *Umsetzung der Spengergram-App*
   * Clean Architecture
-  * Authentication: Basics, OAuth, JWT, Session-Token, Auth-Provider,
+  * Authentication: Basics, OAuth, JWT, Session-Token, Auth-Provider
   * Authorization: Role Based und Policy Based Authentication. Umsetzung mit Identity Framework
   * Fluent API: Fluent API udn Chaining selbst erstellen können.
   * CQS / CQRS
@@ -98,40 +105,149 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
 ## Lehrziele WMC
 ### Wintersemester (Matura Main-Facts)
   * *Umsetzung einer Todo-App (Cross platform: Web/Mobile)*
-  * JavaScript Recap (Promises, Spread Operator, Rest Parameter, Destructuring, Classes,...)
-  * Typescript Basics (Types, Interfaces, Enums, Generics, ...)
-  * Setup Workspace (Node, Yarn, ESLint, Babel, Jest, Vite, Prettier, ...)
-  * React / React Native Basics
-  * React/JSX Style Guide
-  * JSX, Props, State, Hooks, Event Handling, Lifecycle Methods
-  * Components (Stateful vs Stateless), Services, Routing, Forms (VWA)
-  * Component-Patterns (Higher Order, Render-Props)
-  * Validation, Error Handling
-  * Unit Tests, End-to-End Tests (VWA)
-  * Design System, Design Tokens, Figma, Theming, UI/UX Regeln (VWA)
-  * Component-Frameworks (Native Base)
-  * Rest API, Mock API
+  * Introduction Web/Native App Development
+    * **Native vs Hybrid vs Progressive Web Apps [GRUNDLEGEND]**
+  * JavaScript Recap
+    * **Promises, Async/Await [GRUNDLEGEND]**
+    * **Spread Operator, Rest Parameter, Destructuring [GRUNDLEGEND]**
+    * **Array-Methods (map, filter, reduce, ...) [GRUNDLEGEND]**
+    * **Classes vs Prototypes [GRUNDLEGEND]**
+    * **Functions, Lambdas [GRUNDLEGEND]**
+    * **Fetch-API [GRUNDLEGEND]**
+    * Object-Methods (Object.keys, Object.values, ...)
+    * ES6 Modules
+    * CommonJS vs UMD vs ES6 Modules
+    * JSON
+  * Typescript Foundation
+    * **Types, Interfaces, Enums, Generics [GRUNDLEGEND]**
+    * Intersection, Union types
+    * Utility Types, Type Guards
+    * .d.ts Files (Declaration Files)
+    * .tsconfig File (Compiler Options)
+  * Sass Foundation
+    * **Variables, Mixins [GRUNDLEGEND]**
+    * BEM-Style
+  * Setup Workspace for Web/Mobile Development
+    * **Setup Web Development Environment (node, npm, ..) [GRUNDLEGEND]**
+    * **Setup Android Development Environment (Gradle, JDK, Android Studio) [GRUNDLEGEND]**
+    * Setup iOS Development Environment (Xcode)
+  * React Components Foundation
+    * **JSX Lifecycle, State, Props, Events, Hooks [GRUNDLEGEND]**
+    * **Component-Libraries (Native Base) [GRUNDLEGEND]**
+    * **Stateful vs Stateless Components [GRUNDLEGEND]**
+    * Component-Patterns (Higher Order, Render-Props)
+  * React Routing Foundation
+    * **Frontend vs Backend Routing [GRUNDLEGEND]**
+    * **URL-Aufbau [GRUNDLEGEND]**
+    * **Setup Basic Routing [GRUNDLEGEND]**
+    * Route Params, Query Params
+    * Component Routing
+    * Programmatic Routing
+  * HTTP Foundation
+    * **Fetch API vs Axios [GRUNDLEGEND]**
+    * **HTTP Methods, Headers, Body, Status Codes [GRUNDLEGEND]**
+    * Mock APIs (JSON-Server)
+    * Error Handling
+  * Forms Foundation
+    * **Basic Form Setup [GRUNDLEGEND]**
+    * **Form Validation (Client-Side, Server-Side) [GRUNDLEGEND]**
+    * Controlled vs Uncontrolled Components
+    * Form Libraries (Formik)
+  * In-App Notifications Foundation
+    * **Snackbars [GRUNDLEGEND]**
+    * **Modals [GRUNDLEGEND]**
+  * Testing Foundation
+    * **Basic Unit Testing [GRUNDLEGEND]**
+  * Style Guides
+    * Airbnb React/JSX Style Guide
 
 ### Sommersemester (Die ersten Teile werden bereits im WS gestartet)
   * *Umsetzung der Spengergram-App (Cross platform: Web/Mobile)*
-  * NX Mono Repository 
-  * NX Lib Architecture (UI, Data-Access, Features, Util)
-  * Application Shell Pattern, Feature Shell Pattern
-  * Advanced Component-Patterns (Container, Provider, Composition)
+  * Design System
+    * **Figma [GRUNDLEGEND]**
+    * **UI/UX Regeln, Human Interface Guidelines (VWA) [GRUNDLEGEND]**
+    * Storybook
+    * Design Tokens
+    * Theming
+  * NX Mono Repository
+    * Multi-Apps
+  * NX Lib Architecture
+    * **Shared, Feature, UI, Data, Util [GRUNDLEGEND]**
+    * Sharing Code between Web and Mobile
+  * Shell Patterns
+    * App Shell Pattern 
+    * **Feature Shell Pattern [GRUNDLEGEND]**
+  * Advanced React Components
+    * **Container vs Provider [GRUNDLEGEND]**
+    * **List Components [GRUNDLEGEND]**
+    * Grid Components
+    * Image Gallery Components
+    * Bottom Sheet Components
+    * Infinity Scroll
+    * Composition vs Inheritance
+  * Advanced React Routing
+    * **Unterschiede im zwischen Web und Mobile [GRUNDLEGEND]**
+    * Verwendung von Navigation Stacks in Mobile-Apps
+    * Tabs und Drawer Navigation in Mobile-Apps
+    * Route Animationen
+    * Dynamic Routing
+    * Lazy Loading / Preloading
+    * Deep Linking
+  * Advanced HTTP
+    * **Authentication (Basic, Bearer) [GRUNDLEGEND]**
+    * Cookies vs Tokens
+    * File-Upload, File-Download
+    * Interceptors
+    * Caching Strategies
+    * Retry Strategies
   * Statement Management (VWA)
-  * Lazy Loading, Progress Indicator, Skeletons
-  * Native Camera, Gallery, File-Upload, File-Download
-  * Native Features (Push-Notifications, Storage, Battery, Geolocation, ...)
-  * Infinity Scroll
-  * Debugging, Logging, Error Tracking (sentry.io)
-  * Offline First, Offline Sync
+    * **Component State vs Application State [GRUNDLEGEND]**
+    * **Redux-Pattern Basic (Actions, Reducers, Store) [GRUNDLEGEND]**
+    * Redux-Pattern Advanced (Thunks, Saga)
+  * Advanced Navigation
+    * **Top, Bottom, Side Navigation [GRUNDLEGEND]**
+    * Swipe Navigation
+  * Native Features
+    * Camera, Gallery
+    * Push-Notifications
+    * Storage, Battery, Geolocation
+    * Device Orientation
+  * Advanced Testing
+    * E2E Tests
+    * Jest, Playwright, Maestro
+  * User Feedback
+    * **Progress Indicator [GRUNDLEGEND]**
+    * Skeletons
+    * Blurred Hashes
+    * Thumbnails
+  * Application Observability 
+    * **Debugging [GRUNDLEGEND]**
+    * Logging
+    * Monitoring
+    * Error Tracking (Sentry)
+  * Offline First
+    * **Was bedeutet Offline First? [GRUNDLEGEND]**
+    * Cache-Strategies
+    * Sync-Strategies
+    * Background Sync
+  * Performance Optimization
+    * Profiling
+    * Performance Tuning
+  * Internationalization (i18n)
   * Web Security / Mobile Security (VWA)
-  * Mobile Apps vs Progressive Web Apps (PWA)
+    * **SOP, CORS, CSRF, XSS [GRUNDLEGEND]**
+    * Secure Storage
+    * Secure Communication
+    * OWASP Top 10
+  * Mobile App Stores (BONUS Lehrziel)
+    * App Submission Process
+  * Writing Native Plugins (BONUS Lehrziel)
+    * Schreiben von nativen Plugins für Web/Mobile
 
 ## Spengergram-App
 
 * Die Spengergram-App beginnt nach der Todo-App und baut auf den erworbenen Kenntnissen und Fähigkeiten auf.
-* Die Umsetzung erfolgt mittels bekannter moderner Softwareentwicklung- und DevOps-Praktiken.
+* Die Umsetzung beginnt und erfolgt mittels bekannter moderner Softwareentwicklung- und DevOps-Praktiken.
 
 ### DevOps-Komponenten
 * **Infrastruktur-Automatisierung**: Einsatz von Infrastructure as Code (IaC).
