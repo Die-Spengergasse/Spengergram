@@ -124,6 +124,7 @@ namespace Spg.Spengergram.Repository
         }
 
         public void Delete<TId, RichType>(IRichType<TId> richType)
+            where RichType: IRichType<TId>
         {
             TEntity foundEntity = _database.Set<TEntity>().Find(richType) ??
                 throw WriteRepositoryException.FromDelete();

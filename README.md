@@ -27,9 +27,10 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
 * **Wöchentliche Pull-Requests:** Die Studierenden müssen jede Woche einen Pull-Request einreichen. Die Qualität dieser Pull-Requests ist ein zentrales Bewertungskriterium und reflektiert die kontinuierliche Mitarbeit und technische Umsetzung des Projekts.
 * **Praktische Leistungsüberprüfung (PLÜ):** Zusätzlich zur laufenden Bewertung der Pull-Requests findet pro Semester eine PLÜ statt, die darauf abzielt, das erlernte Wissen und die praktischen Fähigkeiten der Studierenden zu bewerten.
 * **Referate und aktive Teilnahme:** Als ergänzende Bewertungsoption können die Studierenden Referate zu spezifischen Themenbereichen halten. Zudem wird die aktive Teilnahme am Unterricht bewertet, um Engagement und Beteiligung im Lernprozess zu fördern.
+* **Open Source:** Spengergram wird als fertige Implementierung den Studierenden zur Verfügung stehen. Auf freiwilliger Basis können sie Pull Requests mit eigenen Erweiterungen einreichen. Die besten 2 (oder 3) Pull Requests werden Ende des Jahres accepted und fließen in den Unterricht des Folgejahres ein. (Quasi ein Contest und damit eine enorme zusätzliche Motivation für die Studierenden). Der POS-Unterricht wird Open Source wie es in der Praxis gelebt wird.
 
 ## Lehrziele POS
-### Wintersemester (Matura Main-Facts)
+### Wintersemester (Matura Main-Facts, VWA Main-Facts)
   * *Umsetzung einer Todo-App*
   * C# Basics / .NET Basics und Unterschiede zum bekannten Java
     * **Wertetypen / Referenztypen [GRUNDLEGEND]**
@@ -50,13 +51,14 @@ Das Projekt dient zudem als Musterbeispiel, das die Studierenden für Diplomproj
     * Validations
     * Logik
     * DTO-Mapping
+    * Rich Typed IDs
   * **LinQ: Übungen und praktische Beispiele [GRUNDLEGEND]**
   * OR-Mapper: 
     * **Code First  [GRUNDLEGEND]**
     * **Data Annotations [GRUNDLEGEND]**
     * Database First
     * Fluent API
-  * 3-Layer Architecture [GRUNDLEGEND]
+  * 3-Layer Architecture
   * Basic-Patterns:
     * **Repository [GRUNDLEGEND]**
     * Builder

@@ -4,10 +4,9 @@ namespace Spg.Spengergram.DomainModel.Interfaces.Repository
 {
     public interface IWritableMessageRepository
     {
-        void Create(Message newMessage);
+        IMessageUpdateBuilder UpdateBuilder(Message withEntity);
 
-        IMessageUpdateBuilder UpdateBuilder { get; }
-
-        void Delete(int id);
+        int Create(Message newMessage);
+        int Delete(MessageId id);
     }
 }

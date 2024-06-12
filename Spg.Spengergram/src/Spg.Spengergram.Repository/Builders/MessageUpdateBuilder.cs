@@ -12,9 +12,11 @@ namespace Spg.Spengergram.Repository.Builders
 
         public Message Entity { get; set; } = default!;
 
-        public MessageUpdateBuilder(SqLiteDatabase db)
+        public MessageUpdateBuilder(SqLiteDatabase db, Message withEntity)
         {
             _db = db;
+
+            Entity = withEntity;
         }
 
         public IMessageUpdateBuilder WithBody(string newBody)

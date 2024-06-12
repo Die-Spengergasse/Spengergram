@@ -1,32 +1,58 @@
-﻿using Spg.Spengergram.DomainModel.Interfaces.Repository;
+﻿using Microsoft.EntityFrameworkCore;
+using Spg.Spengergram.DomainModel.Exceptions.Repository;
+using Spg.Spengergram.DomainModel.Interfaces.Repository;
 using Spg.Spengergram.DomainModel.Model;
 using Spg.Spengergram.Infrastructure;
 using Spg.Spengergram.Repository.Builders;
 
 namespace Spg.Spengergram.Repository.Repositories
 {
+    /// <summary>
+    /// Example for a Repository without generic Base.
+    /// Just simple C.R.U.D., and UpdateBuilder, FilterBuilder
+    /// This is the Write Part
+    /// We just seperate Read/Write through the Interface
+    /// </summary>
     public class WritableMessageRepository : IWritableMessageRepository
     {
         private readonly SqLiteDatabase _db;
 
-        public Message Entity { get; set; } = default!;
-
-        public IMessageUpdateBuilder UpdateBuilder { get; }
-
-        public WritableMessageRepository(SqLiteDatabase db, Message withEntity)
+        public WritableMessageRepository(SqLiteDatabase db)
         {
-            UpdateBuilder = new MessageUpdateBuilder(db);
             _db = db;
         }
 
-        public void Create(Message newMessage)
+        public IMessageUpdateBuilder UpdateBuilder(Message withEntity)
         {
-            throw new NotImplementedException();
+            return new MessageUpdateBuilder(_db, withEntity);
         }
 
-        public void Delete(int id)
+        public int Create(Message newMessage)
         {
-            throw new NotImplementedException();
+            _db.Messages.Add(newMessage);
+            try
+            {
+                return _db.SaveChanges();
+            }
+            catch (DbUpdateException ex)
+            {
+                throw WriteRepositoryException.FromUpdate(ex);
+            }
+        }
+
+        public int Delete(MessageId id)
+        {
+            Message existingMessage = _db.Messages.Find(id) 
+                ?? throw WriteRepositoryException.FromDelete();
+            _db.Messages.Remove(existingMessage);
+            try
+            {
+                return _db.SaveChanges();
+            }
+            catch (DbUpdateException ex)
+            {
+                throw WriteRepositoryException.FromDelete(ex);
+            }
         }
     }
 }

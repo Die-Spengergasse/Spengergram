@@ -10,7 +10,7 @@
 
     public class Reaction
     {
-        public int Id { get; }
+        public int Id { get; private set; }
         public Emoji ReactionType { get; set; }
 
         // Navigations
