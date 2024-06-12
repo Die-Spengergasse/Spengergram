@@ -184,10 +184,13 @@ interdisziplinärer Zusammenarbeit zu ermöglichen, sie bei ihren Diplomprojekte
     * Infinity Scroll
     * Composition vs Inheritance
   * Advanced React Routing
-    * Nested Routes
-    * Route Guards
-    * Lazy Loading
-    * Preloading
+    * **Unterschiede im zwischen Web und Mobile [GRUNDLEGEND]**
+    * Verwendung von Navigation Stacks in Mobile-Apps
+    * Tabs und Drawer Navigation in Mobile-Apps
+    * Route Animationen
+    * Dynamic Routing
+    * Lazy Loading / Preloading
+    * Deep Linking
   * Advanced HTTP
     * **Authentication (Basic, Bearer) [GRUNDLEGEND]**
     * Cookies vs Tokens
