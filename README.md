@@ -202,6 +202,14 @@ interdisziplinärer Zusammenarbeit zu ermöglichen, sie bei ihren Diplomprojekte
     * **Component State vs Application State [GRUNDLEGEND]**
     * **Redux-Pattern Basic (Actions, Reducers, Store) [GRUNDLEGEND]**
     * Redux-Pattern Advanced (Thunks, Saga)
+  * Advanced Navigation
+    * **Top, Bottom, Side Navigation [GRUNDLEGEND]**
+    * Swipe Navigation
+  * Native Features
+    * Camera, Gallery
+    * Push-Notifications
+    * Storage, Battery, Geolocation
+    * Device Orientation
   * Advanced Testing
     * E2E Tests
     * Jest, Playwright, Maestro
@@ -210,21 +218,13 @@ interdisziplinärer Zusammenarbeit zu ermöglichen, sie bei ihren Diplomprojekte
     * Skeletons
     * Blurred Hashes
     * Thumbnails
-  * Advanced Navigation
-    * **Top, Bottom, Side Navigation[GRUNDLEGEND]**
-    * Swipe Navigation
-  * Native Features
-    * Camera, Gallery
-    * Push-Notifications
-    * Storage, Battery, Geolocation
-    * Device Orientation
   * Application Observability 
     * **Debugging [GRUNDLEGEND]**
     * Logging
     * Monitoring
     * Error Tracking (Sentry)
   * Offline First
-    * **Was bedeutet Offline First?[GRUNDLEGEND]**
+    * **Was bedeutet Offline First? [GRUNDLEGEND]**
     * Cache-Strategies
     * Sync-Strategies
     * Background Sync
