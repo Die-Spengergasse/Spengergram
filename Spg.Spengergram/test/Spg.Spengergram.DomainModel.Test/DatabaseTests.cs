@@ -10,11 +10,9 @@ public class DatabaseTests
         using (UnitTestDatabase db = DatabaseUtilities.CreateMemoryDb())
         {
             // Arrange
-            var users = DatabaseUtilities.GetSeedingUsers();
+            DatabaseUtilities.SeedDatabase(db);
 
             // Act
-            db.Users.AddRange(users);
-            db.SaveChanges();
 
             // Assert
             Assert.Equal(7, db.Users.Count());

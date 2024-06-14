@@ -1,4 +1,6 @@
-﻿namespace Spg.Spengergram.DomainModel.Model
+﻿using System.Xml.Linq;
+
+namespace Spg.Spengergram.DomainModel.Model
 {
     public class Message
     {
@@ -26,7 +28,26 @@
         public IReadOnlyList<Comment> Comments => _comments;
 
         // Navigations
-        public User CreatedByNavigation { get; private set; } = default!;
-        public Messenger MessengerNavigation { get; private set; } = default!;
+        public User CreatedByNavigation { get; } = default!;
+        public Messenger MessengerNavigation { get; } = default!;
+
+        public Message AddComment(Comment comment)
+        {
+            if (comment != null)
+            {
+                _comments.Add(new Comment(comment.Body, comment.CreatedByNavigation, this));
+            }
+            return this;
+        }
+
+        public Message AddComments(IEnumerable<Comment> comments)
+        {
+            _comments.AddRange(
+                comments
+                    .Where(c => c is not null)
+                    .Select(c => new Comment(c.Body, c.CreatedByNavigation, this))
+                );
+            return this;
+        }
     }
 }

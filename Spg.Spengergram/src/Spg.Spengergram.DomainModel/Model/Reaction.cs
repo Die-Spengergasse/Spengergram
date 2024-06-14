@@ -14,7 +14,7 @@
         public Emoji ReactionType { get; set; }
 
         // Navigations
-        public User UserNavigation { get; set; } = default!;
-        public Message MessageNavigation { get; set; } = default!;
+        public User UserNavigation { get; } = default!;
+        public Message MessageNavigation { get; } = default!;
     }
 }

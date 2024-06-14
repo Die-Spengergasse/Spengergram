@@ -7,7 +7,21 @@
         public DateTime CreationDateTime { get; }
 
         // Navigations
-        public User CreatedByNavigation { get; private set; } = default!;
-        public Message MessageNavigation { get; private set; } = default!;
+        public User CreatedByNavigation { get; } = default!;
+        public Message MessageNavigation { get; } = default!;
+
+        protected Comment()
+        { }
+        public Comment(string body, User createdBy)
+        {
+            Body = body;
+            CreatedByNavigation = createdBy;
+        }
+        public Comment(string body, User createdBy, Message message)
+        {
+            Body = body;
+            CreatedByNavigation = createdBy;
+            MessageNavigation = message;
+        }
     }
 }

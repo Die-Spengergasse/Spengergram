@@ -36,7 +36,7 @@ namespace Spg.Spengergram.DomainModel.Model
         public IReadOnlyList<Reaction> Reactions => _reactions;
 
         // Navigations
-        public Messenger MessengerNavigation { get; private set; } = default!;
+        public Messenger MessengerNavigation { get; } = default!;
 
         /// <summary>
         /// Re-generate the overloaded default contructor. 
