@@ -1,4 +1,5 @@
-﻿using System.Xml.Linq;
+﻿using Spg.Spengergram.DomainModel.Dtos;
+using System.Xml.Linq;
 
 namespace Spg.Spengergram.DomainModel.Model
 {
@@ -31,6 +32,12 @@ namespace Spg.Spengergram.DomainModel.Model
         public User CreatedByNavigation { get; } = default!;
         public Messenger MessengerNavigation { get; } = default!;
 
+        /// <summary>
+        /// Verifier: > 5 verifyed Posts, they are visible
+        /// Rate-Limitation: max. n Posts per Day and Downsizing
+        /// </summary>
+        /// <param name="comment"></param>
+        /// <returns></returns>
         public Message AddComment(Comment comment)
         {
             if (comment != null)
@@ -48,6 +55,15 @@ namespace Spg.Spengergram.DomainModel.Model
                     .Select(c => new Comment(c.Body, c.CreatedByNavigation, this))
                 );
             return this;
+        }
+
+        /// <summary>
+        /// The Entity should map itself into different DTOs
+        /// </summary>
+        /// <returns></returns>
+        public MessageDto ToDto()
+        {
+            return new MessageDto(Body, CreationDateTime);
         }
     }
 }

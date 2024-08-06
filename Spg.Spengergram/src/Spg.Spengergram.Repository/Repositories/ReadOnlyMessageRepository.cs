@@ -1,5 +1,6 @@
 ﻿using Spg.Spengergram.DomainModel.Interfaces.Repository;
 using Spg.Spengergram.DomainModel.Model;
+using Spg.Spengergram.Infrastructure;
 
 namespace Spg.Spengergram.Repository.Repositories
 {
@@ -9,11 +10,10 @@ namespace Spg.Spengergram.Repository.Repositories
     /// This is the Read Part
     /// We just seperate Read/Write through the Interface
     /// </summary>
-    public class ReadOnlyMessageRepository : IReadOnlyMessageRepository
+    public class ReadOnlyMessageRepository : ReadOnlyRepository<User, IUserFilterBuilder>, IReadOnlyUserRepository
     {
-        public IQueryable<Message> GetByMessanger(int messsangerId)
-        {
-            throw new NotImplementedException();
-        }
+        public ReadOnlyMessageRepository(SqLiteDatabase database, IUserFilterBuilder filterBuilder)
+            : base(database, filterBuilder)
+        { }
     }
 }
