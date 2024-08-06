@@ -12,7 +12,10 @@ namespace Spg.Spengergram.Infrastructure
 
         public SqLiteDatabase()
         { }
-        public SqLiteDatabase(DbContextOptions options)
+        protected SqLiteDatabase(DbContextOptions options)
+            : base(options)
+        { }
+        public SqLiteDatabase(DbContextOptions<SqLiteDatabase> options)
             : base(options)
         { }
 

@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Spg.Spengergram.Api.Test.Helpers;
+using Spg.Spengergram.DomainModel.Interfaces.Repository;
 using Spg.Spengergram.Infrastructure;
+using Spg.Spengergram.Repository.Builders;
 using System.Net;
 using System.Text;
 using System.Text.Json;
@@ -26,6 +28,14 @@ namespace Spg.Spengergram.Api.Test
                 services.AddDbContext<UnitTestDatabase>(options =>
                 {
                     options.UseSqlite("DataSource = UnitTests.db");
+                });
+
+                var dis = services.First(d => d.ServiceType == typeof(IUserFilterBuilder));
+                services.Remove(dis);
+
+                services.AddScoped<IUserFilterBuilder, UserFilterBuilder>(f =>
+                {
+                    return new UserFilterBuilder(f.GetRequiredService<UnitTestDatabase>().Users);
                 });
             });
             builder.UseEnvironment("Development");
