@@ -29,8 +29,8 @@ namespace Spg.Spengergram.DomainModel.Model
         public IReadOnlyList<Comment> Comments => _comments;
 
         // Navigations
-        public User CreatedByNavigation { get; } = default!;
-        public Messenger MessengerNavigation { get; } = default!;
+        public User? CreatedByNavigation { get; set; } = default!;
+        public Messenger MessengerNavigation { get; private set; } = default!;
 
         /// <summary>
         /// Verifier: > 5 verifyed Posts, they are visible

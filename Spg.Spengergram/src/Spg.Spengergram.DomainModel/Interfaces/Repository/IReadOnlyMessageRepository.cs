@@ -4,6 +4,6 @@ namespace Spg.Spengergram.DomainModel.Interfaces.Repository
 {
     public interface IReadOnlyMessageRepository
     {
-        IQueryable<Message> GetByMessanger(Guid messsangerId);
+        IQueryable<Message> GetAllByMessanger(Guid messangerId);
     }
 }

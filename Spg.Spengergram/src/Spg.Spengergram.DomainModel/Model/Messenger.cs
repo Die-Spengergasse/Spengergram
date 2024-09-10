@@ -1,6 +1,8 @@
-﻿namespace Spg.Spengergram.DomainModel.Model
+﻿using Spg.Spengergram.DomainModel.Interfaces.Entity;
+
+namespace Spg.Spengergram.DomainModel.Model
 {
-    public class Messenger
+    public class Messenger: IFindableByGuid
     {
         public MessengerId Id { get; private set; } = default!;
         public Guid Guid { get; private set; }

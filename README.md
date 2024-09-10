@@ -281,7 +281,7 @@ Anwendung von `User Stories`, ergänzt durch Entwicklungspraktiken wie `Test-Dri
 * BONUS: Post Kommentare
 * BONUS: Chat-Funktion
 
-## Lehrziele 1 bis 10 pro Semester / Fach
+## Lehrziele 1 bis 10 pro Semester / WMC
 
 Werden über den Sommer ausgearbeitet.
 
@@ -330,3 +330,131 @@ Werden über den Sommer ausgearbeitet.
 - Auszeichnungssprachen für die Gestaltung
 - Formulargestaltung
 - Barrierefreies Webdesign
+
+===
+
+## Lehrziele 1 bis 10 pro Semester / POS
+
+### 0. Installation
+
+**Basic**
+* [Visual Studio 2022](https://github.com/schletz/Pos3xhif/tree/master?tab=readme-ov-file#installation-der-ide-visual-studio-2022)
+* [GIT](https://github.com/schletz/Pos3xhif/blob/master/06%20Git/01_installation.md)
+
+### 1. C# Basics / .NET Basics
+
+**Basic**
+* [Value Types](https://github.com/schletz/Pos3xhif/blob/master/01%20Types/01_ValueTypes.md)
+* [Reference Types](https://github.com/schletz/Pos3xhif/blob/master/01%20Types/02_ReferenceTypes.md)
+* [Properties](https://github.com/schletz/Pos3xhif/blob/master/01%20Types/03_Properties.md)
+
+**Advanced**
+* [Extension Methods](https://github.com/schletz/Pos3xhif/blob/master/Professional%20C%23/10_ExtensionMethods/README.md)
+
+**Übungen**
+* [Value Types](https://github.com/schletz/Pos3xhif/blob/master/01%20Types/01_ValueTypes.md#%C3%BCbung)
+* [Properties](https://github.com/schletz/Pos3xhif/blob/master/01%20Types/03_Properties.md#%C3%BCbung)
+* [Weitere Aufgaben](https://github.com/schletz/Pos3xhif/tree/master/01%20Types/Uebungen)
+
+### 2. Domain Driven Developement
+
+**Basic**
+* [Plant UML](https://github.com/schletz/Pos3xhif/blob/master/plantuml.md)
+* [Collections](https://github.com/schletz/Pos3xhif/blob/master/01%20Types/04_Collections.md)
+* [Interfaces](https://github.com/schletz/Pos3xhif/blob/master/01%20Types/06_Interfaces.md)
+
+**Übungen**
+* [Collections 1](https://github.com/schletz/Pos3xhif/blob/master/01%20Types/04_Collections.md#%C3%BCbung)
+* [Collections 2](https://github.com/schletz/Pos3xhif/blob/master/01%20Types/04_Collections.md#%C3%BCbung)
+
+### 3. Delegates
+
+**Basic**
+* [Delegates](https://github.com/schrutek/SPG_POS/tree/master/CSharp/LinQ/01_Delegates)
+* [Lamdbas](https://github.com/schletz/Pos3xhif/tree/master/02%20Linq/01_Lambdas)
+
+**Übungen**
+* [Lambdas](https://github.com/schletz/Pos3xhif/tree/master/02%20Linq/01_Lambdas#%C3%BCbung)
+
+### 4. LinQ
+
+**Basic**
+* [LinQ Method Syntax](https://www.tutorialsteacher.com/linq)
+* [Filtering](https://github.com/schletz/Pos3xhif/tree/master/02%20Linq/02_Filterung)
+* [Projection](https://github.com/schletz/Pos3xhif/tree/master/02%20Linq/03_Projection)
+
+**Advanced**
+* [Grouping](https://github.com/schletz/Pos3xhif/tree/master/02%20Linq/04_GroupBy)
+* [LinQ Query Syntax](https://github.com/schletz/Pos3xhif/tree/master/02%20Linq/05_QuerySyntax)
+
+**Übungen**
+* [Filtering](https://github.com/schletz/Pos3xhif/tree/master/02%20Linq/02_Filterung#%C3%BCbungen)
+* [Projection](https://github.com/schletz/Pos3xhif/tree/master/02%20Linq/03_Projection#%C3%BCbung)
+* [Grouping](https://github.com/schletz/Pos3xhif/tree/master/02%20Linq/04_GroupBy#%C3%BCbungen)
+* [LinQ Query Syntax](https://github.com/schletz/Pos3xhif/tree/master/02%20Linq/05_QuerySyntax#%C3%BCbung)
+* [Tankstelle](https://github.com/schletz/Pos3xhif/tree/master/PLF/LINQ%20-%20UebungsPlfLinq)
+
+### 5. OR-Mapper
+
+**Basic**
+* [Code First](https://github.com/schletz/Pos3xhif/tree/master/03%20EF%20Core/02_CodeFirstEfCore5)
+* [Database First](https://github.com/schletz/Pos3xhif/tree/master/03%20EF%20Core/07_DatabaseFirst)
+* [Seeding](https://github.com/bchavez/Bogus)
+* [More Code First](https://github.com/schletz/Pos3xhif/tree/master/03%20EF%20Core/03_EnhancedCodeFirst)
+* [CRUD](https://github.com/schletz/Pos3xhif/tree/master/03%20EF%20Core/06_Crud)
+
+**Advanced**
+* [Rich Domain Model](https://github.com/schletz/Pos3xhif/tree/master/03%20EF%20Core/04_RichDomainModels)
+* [Migrations](https://github.com/schletz/Pos3xhif/tree/master/03%20EF%20Core/08_Migrations)
+
+**Übungen**
+* [Aufgabe (PLÜ)](https://github.com/schletz/Pos3xhif/blob/master/02%20Linq/Uebungen/README.md)
+
+### 6. Architecture
+
+**Basic**
+* [Layered Architecture](https://github.com/schrutek/SPG_POS/tree/master/CSharp/Architecture/LayeredArchitecture.md)
+
+**Advanced**
+* [Microservices](https://github.com/schletz/Pos4xhif/tree/master/REST/06_Microservices)
+* [Clean Architecture](https://github.com/schrutek/SPG_POS/tree/master/CSharp/Architecture/CleanArchitecture.md)
+
+### 7. Services
+
+**Basic**
+* [Interfaces](https://github.com/schletz/Pos3xhif/blob/master/01%20Types/06_Interfaces.md)
+* [Dependency Injection](https://github.com/schletz/Pos3xhif/blob/master/01%20Types/08_DependencyInjection.md)
+  * [Dependency Injection](https://learn.microsoft.com/de-de/archive/blogs/dmx/was-ist-eigentlich-dependency-injection-di)
+* [C.R.U.D.]()
+
+**Advanced**
+* [Mocking]()
+* [Authentication Principles](https://github.com/schletz/Pos4xhif/tree/master/REST/04a_AuthenticationPrinciples)
+* [Authentication in ASP](https://github.com/schletz/Pos4xhif/tree/master/REST/04b_AuthenticationInAspCore)
+
+**Übungen**
+* [Dependency Injection](https://github.com/schletz/Pos3xhif/blob/master/01%20Types/08_DependencyInjection.md#%C3%BCbung)
+
+### 8. Validation
+
+**Basic**
+* coming soon...
+
+### 9. Presentation
+
+**Basic**
+* [RESTful API](https://github.com/schletz/Pos4xhif/tree/master/REST)
+
+**Advanced**
+* [MVC](https://github.com/schrutek/SPG_POS/tree/master/CSharp/MVC)
+* [OData](https://github.com/schletz/Pos4xhif/tree/master/REST/99-OData)
+
+**Übungen**
+* [GET](https://github.com/schletz/Pos4xhif/tree/master/REST/01_GetRoutes#%C3%BCbung)
+* [PUT/POST/DELETE](https://github.com/schletz/Pos4xhif/tree/master/REST/02_PostPutDeleteRoutes#%C3%BCbung)
+* [ink. EF-CORE](https://github.com/schletz/Pos4xhif/tree/master/REST/03_EntityFrameworkCore#%C3%BCbung)
+* [Code First](https://github.com/schletz/Pos4xhif/tree/master/REST/07_CodeFirst#%C3%BCbung)
+
+### 10. coming soon...
+
+* coming soon...

@@ -23,7 +23,8 @@ namespace Spg.Spengergram.Application.Test
                 // Act
                 GetUserFilteredHandler handler = new GetUserFilteredHandler(
                     new ReadOnlyUserRepository(db, new UserFilterBuilder(db.Users)));
-                IQueryable<UserDto> result = handler.Handle(model, CancellationToken.None).Result;
+                IQueryable<UserDto> result = handler.Handle(model, CancellationToken.None)
+                    .Result;
 
                 // Assert
                 Assert.Equal(3, result.Count());

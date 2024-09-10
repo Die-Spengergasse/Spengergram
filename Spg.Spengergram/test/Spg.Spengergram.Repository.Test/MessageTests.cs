@@ -1,5 +1,6 @@
 ﻿using Spg.Spengergram.DomainModel.Exceptions.Repository;
 using Spg.Spengergram.DomainModel.Model;
+using Spg.Spengergram.Repository.Builders;
 using Spg.Spengergram.Repository.Repositories;
 using Spg.Spengergram.Repository.Test.Helpers;
 using System;
@@ -24,14 +25,17 @@ namespace Spg.Spengergram.Repository.Test
                     "assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed " +
                     "diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam " +
                     "erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation " +
-                    "ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.");
+                    "ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                    db.Messengers.ElementAt(0));
+
+                var x = db.Messengers.ElementAt(0);
 
                 // Act
                 WritableMessageRepository repository = new WritableMessageRepository(db);
                 repository.Create(message);
 
                 // Assert
-                Assert.Equal(4, db.Messages.Count());
+                Assert.Equal(8, db.Messengers.ElementAt(0).Messages.Count());
             }
         }
 
@@ -77,7 +81,7 @@ namespace Spg.Spengergram.Repository.Test
 
                 // Assert
                 Assert.Equal(2, existingMessage.Id.Value);
-                Assert.Equal(2, db.Messages.Count());
+                Assert.Equal(6, db.Messengers.ElementAt(0).Messages.Count());
             }
         }
 
@@ -98,6 +102,23 @@ namespace Spg.Spengergram.Repository.Test
                     () => repository.Delete(new MessageId(4711))
                 );
                 Assert.Equal("Delete failed!", ex.Message);
+            }
+        }
+
+        [Fact]
+        public void Should_GetAllMessages_OfOneMessanger()
+        {
+            using (UnitTestDatabase db = DatabaseUtilities.CreateDb())
+            {
+                // Arrange
+                DatabaseUtilities.SeedDatabase(db);
+
+                // Act
+                ReadOnlyMessageRepository repository = new ReadOnlyMessageRepository(db, new MessageFilterBuilder(db.Messages));
+                IQueryable<Message> result = repository.GetAllByMessanger(new Guid("11112222-1111-1111-1111-111122221111"));
+
+                // Assert
+                Assert.Equal(7, result.Count());
             }
         }
     }

@@ -16,7 +16,7 @@ namespace Spg.Spengergram.Application.UseCases.UserStories.Queries
 
         public Task<IQueryable<UserDto>> Handle(GetUserFilteredModel request, CancellationToken cancellationToken)
         {
-             IUserFilterBuilder builder =
+            IUserFilterBuilder builder =
                 _userRepository
                 .FilterBuilder;
 

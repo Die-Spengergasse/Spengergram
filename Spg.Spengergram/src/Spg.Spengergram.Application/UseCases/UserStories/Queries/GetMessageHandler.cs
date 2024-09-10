@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Spg.Spengergram.Application.Parameter;
 using Spg.Spengergram.DomainModel.Dtos;
 using Spg.Spengergram.DomainModel.Interfaces.Repository;
 using System;
@@ -20,10 +21,8 @@ namespace Spg.Spengergram.Application.UseCases.UserStories.Queries
 
         public Task<IQueryable<MessageDto>> Handle(GetMessageModel request, CancellationToken cancellationToken)
         {
-            IQueryable<MessageDto> result = 
-                
-            _messageRepository
-                .GetByMessanger(request.Query.MessengerId)
+            IQueryable<MessageDto> result = _messageRepository
+                .GetAllByMessanger(request.Query.MessengerId)
                 .Select(r => r.ToDto());
 
             return Task.FromResult(result);

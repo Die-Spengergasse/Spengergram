@@ -23,13 +23,8 @@ namespace Spg.Spengergram.Repository.Test.Helpers
 
         public static void SeedDatabase(UnitTestDatabase db)
         {
-            List<User> users = GetSeedingUsers();
-            List<Message> messages = GetSeedingMessages();
-            List<Messenger> messengers = GetSeedingMessengers(messages, new List<User>() { users.ElementAt(1) });
-
-            db.Users.AddRange(users);
+            List<Messenger> messengers = GetSeedingMessengers();
             db.Messengers.AddRange(messengers);
-
             db.SaveChanges();
         }
 
@@ -102,24 +97,74 @@ namespace Spg.Spengergram.Repository.Test.Helpers
             {
                 new Message("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, " +
                 "sed diam nonumy eirmod tempor invidunt ut labore et dolore magna " +
-                "aliquyam erat, sed diam voluptua"),
+                "aliquyam erat, sed diam voluptua")
+                    .AddComment(new Comment("nice!", GetSeedingUsers().ElementAt(6)))
+                    .AddComment(new Comment("like :)", GetSeedingUsers().ElementAt(5))),
                 new Message("At vero eos et accusam et justo duo dolores et ea rebum. " +
                 "Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum " +
                 "dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing " +
                 "elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore " +
                 "magna aliquyam erat, sed diam voluptua. At vero eos et accusam et " +
-                "justo duo dolores et ea rebum"),
-                new Message("Stet clita kasd gubergren, no sea takimata sanctus est " +
-                "Lorem ipsum dolor sit amet."),
+                "justo duo dolores et ea rebum")
+                    .AddComment(new Comment("Comment 1", GetSeedingUsers().ElementAt(5)))
+                    .AddComment(new Comment("Comment 2", GetSeedingUsers().ElementAt(2)))
+                    .AddComment(new Comment("Comment 3", GetSeedingUsers().ElementAt(3))),
+                new Message("Hello World!"),
+                new Message("Ut wisi enim ad minim veniam, quis nostrud exerci tation " +
+                "ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."),
+                new Message("Duis autem vel eum iriure dolor in hendrerit in vulputate " +
+                "velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis " +
+                "at vero eros et accumsan et iusto odio dignissim qui blandit praesent " +
+                "luptatum zzril delenit augue duis dolore te feugait nulla facilisi."),
+                new Message("Duis autem vel eum iriure dolor in hendrerit in vulputate " +
+                "velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis" +
+                "_xxxxx."),
+                new Message("Stet clita kasd gubergren, no sea takimata sanctus est Lorem " +
+                "ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing " +
+                "elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna " +
+                "aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores " +
+                "et ea rebum."),
+                new Message("Lorem ipsum dolor sit amet,"),
+                new Message("Stet clita kasd gubergren, no sea takimata sanctus."),
+                new Message("At vero eos et accusam et justo duo dolores et ea rebum."),
             };
         }
-        public static List<Messenger> GetSeedingMessengers(List<Message> messages, List<User> users)
+
+        public static List<Messenger> GetSeedingMessengers()
         {
             return new List<Messenger>()
             {
-                new Messenger(new Guid("11111111-1111-1111-1111-111111111111"))
-                    .AddMessages(messages)
-                    .AddUsers(new List<User>() { GetSeedingUsers().ElementAt(1) })
+                new Messenger(new Guid("11112222-1111-1111-1111-111122221111"))
+                    .AddMessages(new List<Message>()
+                    {
+                        GetSeedingMessages().ElementAt(0),
+                        GetSeedingMessages().ElementAt(1),
+                        GetSeedingMessages().ElementAt(2),
+                        GetSeedingMessages().ElementAt(3),
+                        GetSeedingMessages().ElementAt(4),
+                        GetSeedingMessages().ElementAt(5),
+                        GetSeedingMessages().ElementAt(6),
+                    })
+                    .AddUsers(new List<User>()
+                    {
+                        GetSeedingUsers().ElementAt(0),
+                        GetSeedingUsers().ElementAt(1),
+                        GetSeedingUsers().ElementAt(2),
+                    }),
+                new Messenger(new Guid("22221111-2222-2222-2222-222211112222"))
+                    .AddMessages(new List<Message>()
+                    {
+                        GetSeedingMessages().ElementAt(7),
+                        GetSeedingMessages().ElementAt(8),
+                        GetSeedingMessages().ElementAt(9)
+                    })
+                    .AddUsers(new List<User>()
+                    {
+                        GetSeedingUsers().ElementAt(3),
+                        GetSeedingUsers().ElementAt(4),
+                        GetSeedingUsers().ElementAt(5),
+                        GetSeedingUsers().ElementAt(6),
+                    })
             };
         }
     }

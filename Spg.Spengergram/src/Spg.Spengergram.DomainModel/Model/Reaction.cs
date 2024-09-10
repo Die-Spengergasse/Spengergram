@@ -2,6 +2,7 @@
 {
     public enum Emoji 
     {
+        // https://emojikopieren.de/
         // https://www.engagebay.com/blog/emojis-with-meaning/
         // https://emojiisland.com/pages/download-new-emoji-icons-in-png-ios-10
         Smile, Laughing, LaughingCrying, BlushingSmileyFaceWithHearts, HeartShapedEyesFace,

@@ -12,7 +12,7 @@ namespace Spg.Spengergram.Repository.Repositories
     /// This is the Read Part
     /// We just seperate Read/Write through the Interface
     /// </summary>
-    public class ReadOnlyMessengerRepository : RepositoryBase<Messenger>, IRepositoryBase<Messenger>
+    public class ReadOnlyMessengerRepository : RepositoryBase<Messenger>, IReadOnlyMessangerRepository
     {
         public ReadOnlyMessengerRepository(SqLiteDatabase database)
             : base(database)

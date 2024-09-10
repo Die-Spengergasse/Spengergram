@@ -12,7 +12,7 @@ namespace Spg.Spengergram.DomainModel.Model
         /// </summary>
         public UserId Id { get; private set; } = default!;
         /// <summary>
-        /// Worst: api/users/4711 !!!! (Who will be: 4712, 4713, 4714, ...)
+        /// Worst: api/users/4711 !!!! (Lets try in Browser: 4712, 4713, 4714, ...)
         /// Better: api/users/e0bbc0c1-68e6-4230-813e-4bd1db18cc0e
         /// </summary>
         public Guid Guid { get; private set; }
@@ -20,7 +20,7 @@ namespace Spg.Spengergram.DomainModel.Model
         public string LastName { get; set; } = string.Empty;
         public Username Username { get; private set; } = default!; // should it be changable?
         public EMailAddress EMailAddress { get; set; } = default!;
-        public int Evaluation { get; set; } = 0;
+        public int Evaluation { get; set; }
         public DateTime BirthDate { get; private set; } // should it be changable? (Change BirthDate?!?!?!)
 
         // Collections (!Secure Lists! Data only comes from Database.

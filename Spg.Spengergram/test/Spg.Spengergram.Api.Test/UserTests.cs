@@ -14,7 +14,7 @@ namespace Spg.Spengergram.Api.Test
         }
 
         [Fact()]
-        public async void Should_WORK_Grrrrrrrrrrrrrrrrrr()
+        public async void Should_GetAllUsers()
         {
             _factory.InitializeDatabase(db =>
             {
